@@ -1,6 +1,6 @@
----
-sidebar_position: 5
-title: "Criar Novos Arquivos Harmony"
+---  
+sidebar_position: 5  
+title: "Criar Novos Arquivos Harmony"  
 ---
 
-Criar novos arquivos de cenas de um episódio.
+Criar novos arquivos de cenas de um episódio.  
