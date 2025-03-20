@@ -15,7 +15,7 @@ Siga os passos a seguir para executar o BirdoApp no modo desenvolvedor:
 
 #### a. Abra o programa Powershell;
 
-### b. Execute os comandos a seguir, cada um seguido pela tecla `ENTER`
+#### b. Execute os comandos a seguir, cada um seguido pela tecla `ENTER`
 
 ```powershell
 cd $env:APPDATA\BirdoApp\
