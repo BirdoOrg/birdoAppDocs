@@ -11,54 +11,22 @@ A interface por onde projetos, episódios e cenas são criados no BirdoApp é ac
 
 ### 1) Acessando o modo desenvolvedor
 
-#### a. Abrindo o Powershell na pasta correta
+Siga os passos a seguir para executar o BirdoApp no modo desenvolvedor:
 
-Para lançar o BirdoApp no modo desenvolvedor será preciso executar uma linha de comando no Powershell (ou Terminal). ***Mas atenção*** :warning:, _o Powershell deverá ser aberto na pasta do BirdoApp_. Para abrir uma janela do Powershell na pasta correta siga os passos a seguir:
+#### a. Abra o programa Powershell;
 
-##### I - Abra uma janela do Windows Explorer
-
-Isso pode ser feito com o atalho `Tecla Windows` + `e`, ou pelo menu Iniciar.
-
-##### II - Navegue até a pasta do BirdoApp
-
-Navegue até a pasta `C:\Users\<SEU USUÁRIO>\AppData\Roaming\BirdoApp\`, ou simplesmente cole a linha abaixo na barra de endereço do Windows Explorer:
-
-`%APPDATA%\BirdoApp\`
-
-:::tip
-O atalho para editar a barra de endereços do Windows Explorer é o `Alt+D` (ou `Ctrl+L`).
-:::
-
-##### III - Invoque o Powershell pela barra de endereços
-
-Edite a barra de endereços do Windows Explorer mais uma vez, mas dessa vez escreva apenas _powershell_. Isso vai abrir uma janela do Powershell já na pasta correta. Se você tiver o programa Terminal instalado no seu computador é possivel abrir uma janela clicando com o botão direito do mouse em uma área vazia da pasta e escolher a opção "Abrir no Terminal".
-
-#### b. Copiando o comando do _launcher_
-
-Normalmente o BirdoApp é executado a partir do ícone que é criado na desktop durante a instalação. Esse ícone executa um comando e para executar no modo desenvolvedor esse comando requer um complemento. Clique com o botão direito do mouse no ícone do BirdoApp na desktop e escolha a opção _Propriedades_.
-
-![opção Propriedades no menu do ícone do BirdoApp](./configProj00.png)
-
-Na janela que aparecer você deve selecionar e copiar todo o texto dentro do campo _Target_.
-
-![texto no campo Target nas propriedades do atalho](./configProj01.png)
-
-:::tip
-Ao invés de clicar e arrastar o mouse por toda a caixa de texto, você pode clicar uma única vez sobre o texto e utilizar o atalho `Ctrl+A` (selecionar tudo) para selecionar tudo que estiver na caixa de texto.
-:::
-
-#### c. Complementando e executando o comando
-
-Abra o programa Powershell (ou Terminal) através do menu iniciar. Cole o comando dentro da janela do programe e complemente com o texto ` --dev` (atenção para o espaço para não colar com o fim do comando copiado).
-
-![programa Terminal no menu iniciar do Windows 10](./configProj02.png)
-
-![texto no campo Target nas propriedades do atalho](./configProj03.png)
-
-Alternativamente você pode executar diretamente o comando abaixo em uma janela do Powershell:
+### b. Execute os comandos a seguir, cada um seguido pela tecla `ENTER`
 
 ```powershell
-& $env:APPDATA\BirdoApp\venv\Scripts\python.exe main.py --dev
+cd $env:APPDATA\BirdoApp\
+```
+
+```powershell
+.\venv\Scripts\activate.ps1
+```
+
+```powershell
+python main.py --dev
 ```
 
 ### 2) Criando projetos/episódiso/cenas
@@ -76,6 +44,6 @@ Para criar um novo projeto, siga as seguintes etapas:
 * Cole o caminho da pasta raíz do projeto no servidor;
 * Opcionalmente, cole o caminho para um arquivo de imagem para servir de ícone do projeto.
  
-Em seguida você deve ver mensagens de confirmação e pressionar qualquer tecla para voltar ao menu inicial do Modo Desenvolvedor. Depois disso o projeto vai aparecer disponível para *todos* que tiverem feito [a configuração da variante de estúdio](./configuracao-inicial) do BirdoApp.
+Em seguida você deve ver mensagens de confirmação e pressionar qualquer tecla para voltar ao menu inicial do Modo Desenvolvedor. Depois disso o projeto vai aparecer disponível para *todos* que tiverem feito [a configuração da variante *de estúdio*](./configuracao-inicial) do BirdoApp.
 
 5) Inicie a interface do BirdoApp e veja o projeto configurado

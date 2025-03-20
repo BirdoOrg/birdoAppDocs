@@ -1,6 +1,6 @@
 ---
 title: Perfis
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 Diferentes profissionais trabalham com o BirdoApp. Na tabela a seguir uma descrição de cada uma delas:

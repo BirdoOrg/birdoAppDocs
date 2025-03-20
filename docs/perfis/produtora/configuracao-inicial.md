@@ -13,6 +13,10 @@ Abra o BirdoApp pela primeira vez e preencha com suas informações básicas: No
 
 ![tela de configuração inicial do BirdoApp](./confInicial00.png)
 
+:::warning
+Você precisa clicar em `Salvar` _antes_ de prosseguir com a configuração de estúdio.
+:::
+
 ### 2) Configurar Estúdio
 
 Clique no símbolo com três barras verticais `|||` no canto superior esquerdo da janela de configuração do BirdoApp e escolher a opção _Configurar Estúdio_. Preencha os campos _Nome_ e _BirdoApp Setup_ com o nome do estúdio e o caminho da pasta no servidor onde ficarão os arquivos de configuração de *todos* os projetos.
