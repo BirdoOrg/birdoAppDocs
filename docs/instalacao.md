@@ -7,14 +7,19 @@ title: "Instalação"
 
 ## tl;dr
 
-Para iniciar a instalação do BirdoApp no Windows, abra o programa Powershell (ou Terminal) e cole cada uma das linhas abaixo, pressionando em seguida a tecla `ENTER`.
+Para iniciar a instalação do BirdoApp no Windows, abra o programa Powershell (ou Terminal) e cole a primeira linha a seguir e pressione a tecla `ENTER`.
 
-```  
-Set-ExecutionPolicy -Scope CurrentUser RemoteSigned  
+``` powershell
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+```
+
+Em seguida, cole essa próxima linha e pressione `ENTER` novamente.
+
+``` powershell
 IRM -Uri https://raw.githubusercontent.com/otmbneto/BirdoApp/refs/heads/config_proj3/install.ps1 | IEX  
 ```
 
-Depois disso basta seguir as orientações que aparecerão.
+Depois disso basta seguir as orientações.
 
 ## Isso é seguro?
 
