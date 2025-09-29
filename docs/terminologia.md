@@ -1,9 +1,9 @@
 ---  
 sidebar_position: 4  
-title: "Terminologia"  
+title: "Glossário"
 ---
 
-# Terminologia
+# Glossário
 
 O BirdoApp foi criado para facilitar produções de animação 2D que utilizem o software Toon Boom Harmony. Trata-se um universo diverso e que conta com uma variedade de técnicas, etapas e processos possíveis e que só é possível graças à dedicação e talento de profissionais incríveis (como você!) que contém diferentes habilidades, conhecimentos, competências e atribuições. Portanto, faz sentido apresentar alguns termos que serão utilizados nesta documentação e que também são encontrados durante a utilização do BirdoApp.
 
