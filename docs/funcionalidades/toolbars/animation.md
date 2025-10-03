@@ -15,7 +15,7 @@ Adicione a barra **BirdoApp Animation** a janela _Camera View_ para melhor acess
 
 
 ### BD_BirdoLibrary !["BD_BirdoLibrary icon"](./animation/BD_BirdoLibrary.png)
-Esta ferramenta acessa o banco de reaproveitamento da [_BirdoLibrary_](../../biblioteca/index.mdx##birdo-library) e permite aplicar o banco escolhido no frame atual do RIG selecionado.
+Esta ferramenta acessa o banco de reaproveitamento da [_BirdoLibrary_](../../bibliotecas/birdo-library.md) e permite aplicar o banco escolhido no frame atual do RIG selecionado.
 
 **Modo de Uso**: Selecionar qualquer node do RIG, e apertar o botão.
 
