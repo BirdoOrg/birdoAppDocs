@@ -9,7 +9,7 @@ title: "Configuração"
 
 O BirdoApp precisa de algumas configurações para funcionar da forma esperada. Na prática essas configurações são pequenos arquivos de texto, escritos no formato `json`, que guardam informações que o BirdoApp precisa consultar durante seu funcionamento.
 
-Basicamente são 3 configurações necessãrias, dependendo da [variante](./variantes) utilizado ou da função que você estiver exercendo no projeto. A seguir a explicação de cada uma delas.
+Basicamente são 3 configurações necessãrias, dependendo do [modo de uso](./modos-de-uso) utilizado ou da função que você estiver exercendo no projeto. A seguir a explicação de cada uma delas.
 
 ## Configuração de usuário
 
