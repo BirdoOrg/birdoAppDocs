@@ -7,7 +7,7 @@ title: "Modos de uso"
 
 O BirdoApp possibilita duas formas de se usar: a variante _standalone_, voltada para profissionais independentes que trabalhem com animação e precisem de ajuda com tarefas do dia-a-dia dentro do Toon Boom Harmony; e a variante _para estúdios_ que também contém uma série de automatizações de processos comuns a um projeto de animação 2D em um estúdio.
 
-## Variante _Standalone_
+## Modo _Standalone_
 
 Voltado para trabalhos individuais ou testes locais.
 Neste modo, você pode criar e gerenciar seus arquivos de animação diretamente no seu computador, sem depender de um servidor de estúdio.
@@ -24,7 +24,7 @@ Esse modo é ideal para:
 * Estudos e experimentos pessoais.
 * Desenvolvimento individual de assets e testes.
 
-## Variante _Para Estúdios_
+## Modo _Para Estúdios_
 
 Voltado para produções colaborativas, quando você trabalha dentro de um fluxo organizado pelo seu estúdio de animação.
 
@@ -47,7 +47,7 @@ Esse modo é ideal para:
 * Trabalho em equipe, onde várias pessoas compartilham e atualizam os mesmos projetos.
 * Garantir que todos os arquivos sigam a estrutura e os padrões definidos pelo pipeline de produção.
 
-A tabela a seguir apresenta um compartivo de características entre as duas variantes:
+A tabela a seguir apresenta um compartivo de características entre os dois modos:
 
 | | _Standalone_ | _Para Estúdio_ |
 |-|:-:|:-:|
