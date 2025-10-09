@@ -5,15 +5,15 @@ title: "Glossário"
 
 # Glossário
 
-O BirdoApp foi criado para facilitar produções de animação 2D que utilizem o software Toon Boom Harmony. Trata-se um universo diverso e que conta com uma variedade de técnicas, etapas e processos possíveis e que só é possível graças à dedicação e talento de profissionais incríveis (como você!) que contém diferentes habilidades, conhecimentos, competências e atribuições. Portanto, faz sentido apresentar alguns termos que serão utilizados nesta documentação e que também são encontrados durante a utilização do BirdoApp.
+O BirdoApp foi criado para facilitar produções de animação 2D que utilizem o software Toon Boom Harmony. Trata-se um universo diverso e que conta com uma variedade de técnicas, etapas e processos possíveis e que só é possível graças à dedicação e talento de profissionais incríveis (como você!) que apresenta diferentes habilidades, conhecimentos, competências e atribuições. Portanto, faz sentido apresentar alguns termos que serão utilizados nesta documentação e que também são encontrados durante a utilização do BirdoApp.
 
 ## BirdoApp
 
-O BirdoApp na prática é um conjunto de scripts e programas que giram em volta do Toon Boom Harmony *e* dos processos de projetos de animação 2D. Normalmente ao se referir ao BirdoApp, estamos falando de alguma funcionalidade oferecida, como um atalho na barra de ferramentas para navegar pela *nodeview* do rig de personagem, ou a possibilidade de limpar uma cena, compactá-la e subir para um servidor de uma maneira versionada. Todas essas funcionalidades serão cobertas em detalhes no decorrer dessa documentação.
+O BirdoApp na prática é um conjunto de scripts e programas que giram em volta do Toon Boom Harmony *e* dos processos de projetos de animação 2D. Normalmente ao se referir ao BirdoApp, estamos falando de alguma funcionalidade oferecida, como um atalho na barra de ferramentas para navegar pela *nodeview* do rig de personagem, ou a possibilidade de limpar uma cena, compactá-la e subi-la para um servidor de uma maneira versionada. Todas essas funcionalidades serão cobertas em detalhes no decorrer dessa documentação.
 
 ## Projeto
 
-A princípio o BirdoApp foi criado para auxiliar as equipes que trabalham em em projetos de série de animação 2D de uma ou mais temporadas. Mas qualquer animação feita com o Toon Boom Harmony pode se beneficiar das funcionalidades do BirdoApp: longas metragem, aberturas, vinhetas, peças de publicidade... De uma visão macro, a organização dos projetos pode ser vista da seguinte maneira:
+A princípio o BirdoApp foi criado para auxiliar as equipes que trabalham em em projetos de série de animação 2D de uma ou mais temporadas. Mas qualquer animação feita com o Toon Boom Harmony pode se beneficiar das funcionalidades do BirdoApp: longas metragem, aberturas, vinhetas, peças de publicidade,etc... De uma visão macro, a organização dos projetos pode ser vista da seguinte maneira:
 
 ```  
 PROJETO  
@@ -30,13 +30,13 @@ PROJETO
  └─ ...  
 ```
 
->A notação de 3 números para definir um episódio indica o número da temporada, no número mais à esquerda, e o número do episódio, nos dois números seguintes. `EP101` que dizer *episódio 01 da primeira temporada*, `EP205`, *quinto episódio da segunda temporada*... 
+>A notação de 3 números para definir um episódio indica o número da temporada, no número mais à esquerda, e o número do episódio, nos dois números seguintes, por exemplo: `EP101` que dizer *episódio 01 da primeira temporada*, `EP205`, *quinto episódio da segunda temporada*.
 
 >A notação de 4 números é o padrão preferido para definir as cenas de forma incremental, utilizando a casa das *dezenas* (`CENA_0010`, `CENA_0020`, `CENA_0030`...). Isso é feito pois às vezes novas cenas precisam ser acrescentadas. Se isso acontecer, pode-se utilizar a casa das *unidades*, sem comprometer a sequência numérica nem precisar alterar o nome das cenas existentes (uma `CENA_0015` pode passar a existir entre a `CENA_0010` e a `CENA_0020`).
 
 ## Episódios
 
-A primeira divisão de um projeto. Apesar do termo estar ligado à projetos de séries, pode ser usado em outros contextos. *"Episódios"* podem equivaler à *"Sequências"* em um projetos de longa metragem, ou *"Peças"* em uma campanha publicitária. Um projeto de abertura de novela, por exemplo, pode estar dividido em dois episódios: abertura e créditos finais.
+A primeira divisão de um projeto. Apesar do termo estar ligado à projetos de séries, pode ser usado em outros contextos. *"Episódios"* podem equivaler à *"Sequências"* em um projeto de longa metragem, ou *"Peças"* em uma campanha publicitária. Um projeto de abertura de novela, por exemplo, pode estar dividido em dois episódios: abertura e créditos finais.
 
 Em nomes de pastas e arquivos aparece abreviado como `EP`, mas isso pode ser alterado nas configurações.
 
@@ -48,7 +48,7 @@ Em nomes de pastas e arquivos aparece abreviado como `SC` (de *scene*), mas isso
 
 ## Animatic
 
-Versão em baixa fidelidade da animação. Importante para que mesmo antes da etapa de setup já se saiba quais os personagens presentes, como estão dispostos, interações com props e/ou cenário, assim como a duração de cada cena de um episódio.
+O animatic é um storyboard editado de forma sequencial e temporal, com ou sem áudio, que serve como uma versão preliminar da animação. É possível testar nele o tempo das ações, enquadramentos, movimentos, composição e ritmo das cenas. Essa etapa é importante para que, mesmo antes da fase de setup, já se saiba quais personagens estão presentes, como estão dispostos, como interagem com adereços e cenários, além da duração de cada cena do episódio.
 
 ## Note
 
@@ -83,11 +83,11 @@ Todas essas ações são executadas automaticamente pelo script *"Publish"*.
 
 ## "Local Folder"
 
-Como visto na *Visão Geral*, o BirdoApp *espelha* no computador de quem usa a estrutura de pastas e arquivos encontrada no servidor. O termo *"local folder"* é usado, na configuração de cada projeto, para definir a pasta que naquele computador que vai servir como raiz onde serão baixados do servidor os arquivos daquele projeto.
+Como visto em Visão Geral, o BirdoApp replica a estrutura de pastas e arquivos encontrada no servidor no computador do usuário. O termo "local folder", na configuração de cada projeto, define a pasta local que funcionará como raiz, ou seja, a pasta onde os arquivos do projeto serão baixados do servidor.
 
 ## Servidor
 
-Armazenamento central dos arquivos do projeto. Pode ser uma pasta na rede ou um serviço de armazenamento em nuvem, como o Nextcloud. É de onde o BirdoApp baixa os arquivos necessários para que se trabalhe no projeto e ele onde sobe os entregáveis de cada etapa.
+Armazenamento central dos arquivos do projeto. Pode ser uma pasta na rede ou um serviço de armazenamento em nuvem, como o Nextcloud. É de onde o BirdoApp baixa os arquivos necessários para que se trabalhe no projeto e onde sobe os entregáveis de cada etapa.
 
 ## Asset
 

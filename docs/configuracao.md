@@ -39,10 +39,10 @@ Essa é uma configuração adicional que precisa ser feita por alguém encarrega
 * **Prefixo do projeto**, 3 letras que identifique o projeto, usado para resolver a nomenclatura dos arquivos desse projeto;
 * **Nome do projeto**, seguido por um **subtítulo** e uma **descrição**;
 * **Pasta raíz**, com o caminho no servidor onde estão organizados os arquivos desse projeto;
-* **Ícone**, imagem do projeto na interface de seleção d eprojetos do BirdoApp.
+* **Ícone**, imagem do projeto na interface de seleção de projetos do BirdoApp.
 
-Essas informações devem ficar em uma pasta permanente do servidor onde todos do estúdio tenham acesso de leitura (a mesma informado no campo _configuração de projetos_ na [configuração de estúdio](#configuração-de-estúdio)). Preferencialmente, apenas produtores e supervisores devem ter acesso _de escrita_ a essa pasta. Mais sobre isso em [gestão de acessos](./gestao-de-acessos).
+Essas informações devem ficar em uma pasta permanente do servidor onde todos do estúdio tenham acesso de leitura (a mesma informada no campo _configuração de projetos_ na [configuração de estúdio](#configuração-de-estúdio)). Preferencialmente, apenas produtores e supervisores devem ter acesso _de escrita_ a essa pasta. Mais sobre isso em [gestão de acessos](./gestao-de-acessos).
 
 Detalhes de como fazer a configuração de projetos nas tarefas dos perfis de [produtora(o)](./perfis/produtora/configuracao-projetos) e [técnica(o)/perfis/produtora/configuracao-projetos](./perfis/tecnica/configuracao-projetos).
 
-Depois de criados os projetos, você pode alterar outras opções do projeto. Como os templates, os arquivos usados de base para a criação de cenas e assets. Mais sobre a criação de templates em [_templates_](./templates).
+Após a criação dos projetos, você pode alterar outras opções, como os templates, arquivos base usados para a criação de cenas e assets. Para mais informações sobre a criação de templates, consulte a seção [_templates_](./templates).
