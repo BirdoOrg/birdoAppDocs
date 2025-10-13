@@ -22,36 +22,68 @@ Esta ferramenta acessa o banco de reaproveitamento da [_BirdoLibrary_](../../bib
 <details>
   <summary>Interface</summary>
   <div style={{ textAlign: 'left'}}> <img src={importedIterfaceBirdoLib} width='600' /> </div>
-   - 1. Itens do Banco do Rig selecionado. Cada Rig pode conter mais de um grupo de banco. Os grupos de bancos são divididos por abas nessa área. Nesse exemplo, temos somente o grupo principal do Rig "LUPI";
-   - 2. "_Right to Modify": marque esta opção para liberar a edição dos itens (somente disponível para perfis de supervisão);
-   - 3. "Filter": esta área em opções para filtrar o tipo de item do banco:
-     -"_type_": Tipo de item (animação ou pose)
-     -"_Status_": Filtra pelo status do item (aprovado ou esperando aprovação);
-     -"_Tags_": adicione diferentes tags para filtrar por palavras chaves os itens;
-   - 4. "_Advanced_": Esta área oferece opções avançadas para aplicação do banco:
-     -"_Keys Drawings_": aplica tanto _keys_ quanto _drawings_ na timeline;
-     -"_Only Drawings_": aplica somente _drawings_ na timeline;
-     -"_Only Keys_": aplica somente _keys_ na timeline;
-     -"_Frames": dá opção de aplicar intervalo de frames dentro da animação do item (somente abilitado para itens de banco de animação);
-   - 5. "_Rig Path_": Caminho de destino do RIG selecionado;	
+   1. Itens do Banco do Rig selecionado. Cada Rig pode conter mais de um grupo de banco. Os grupos de bancos são divididos por abas nessa área. Nesse exemplo, temos somente o grupo principal do Rig "LUPI";
+   2. "_Right to Modify_": marque esta opção para liberar a edição dos itens (somente disponível para perfis de supervisão);
+   3. "Filter": existem opções para filtrar os itens do banco de dados por:
+   - "_type_": que define o tipo de item, como animação ou pose;
+   - "_Status_": que permite filtrar de acordo com a situação do item, seja aprovado ou aguardando aprovação;
+   - "_Tags_": onde é possível adicionar diferentes palavras-chave para refinar ainda mais a busca;
+
+   4. "_Advanced_": Esta área oferece opções avançadas para aplicação do banco:
+   - "_Keys Drawings_": aplica tanto _keys_ quanto _drawings_ na timeline;
+   - "_Only Drawings_": aplica somente _drawings_ na timeline;
+   - "_Only Keys_": aplica somente _keys_ na timeline;
+   - "_Frames_": dá opção de aplicar intervalo de frames dentro da animação do item (somente abilitado para itens de banco de animação);
+   
+   5. "_Rig Path_": Caminho de destino do RIG selecionado;	
   
   :::tip
-  Deixe o mouse parado em cima do item para ver mais informações e um preview da animação caso seja item de banco de animação.
+  Mantenha o cursor parado sobre um item para acessar detalhes adicionais e uma visualização prévia da animação, se for um item do banco de animação
   :::
 </details>
+
 
 <details>
   <summary>Avançado</summary>
 
-  Para usuários com permissão, é possível editar os itens do banco. Basta clicar com o botão direito que o menu avançado aparece com as opções:
+  Ao clicar com botão direito do mouse em um item, as seguintes opções estarão disponíves:
+
   !["menu avançado"](./animation/BirdoLib-interface-avancado.png)
+
+  - `Select`: Seleciona o item (o mesmo que clicar direto no item);
+  - `Favorite`: Seleciona o item como favorito. Fica marcado com uma linha amarela em volta do item; 
+  - \*`Change Status`: Muda o status para um dos disponíveis;  
+  - \*`Edit Item`: Abre o tpl do item para edição;
+  - \*`Delete Item`: deleta o item selecionado do banco da BirdoLibrary;
+
+  \*Disponível apenas para tipos de usuários com permissão de edição;
+
 </details>
 
 
 ### BD_BirdoLibSave !["BD_BirdoLib_Save icon"](./animation/BD_BirdoLib_Save.png)
-Use este script para salvar algum banco para a birdoLIB 
-(OBS: selecione na time line a pose, ou trecho da animacao pelo grupo do banco do rig!)
+Esta ferramenta seleciona uma POSE ou ANIMAÇÃO na timeline do grupo de banco do RIG e salva na [_BirdoLibrary_](../../bibliotecas/birdo-library.md).
 
+**POSE:** Fica definido como POSE toda seleção do grupo de banco do RIG na _timeline_ que contenha **APENAS** 1 frame;
+**ANIMAÇÃO**: Fica definido como ANIMAÇÃO toda seleção do grupo de banco do RIG na _timeline_ que contenha **MAIS** de 1 frame;
+
+**Modo de Uso:** Selecione o grupo de banco do RIG que deseja salvar, e quantos frames do banco que deseja salvar.
+
+<details>
+  <summary>Interface</summary>
+  
+  !["Save BirdoLibrary interface"](./animation/save-birdolib.png)
+
+  - `Tags`: Aqui é listado todas tags disponíveis da BirdoLibrary para adicionar no item. Dividida por tipos em Abas
+  - \*`Add New Tag Type`: Cria um novo tipo de Tag e uma aba nova;
+  - \*`Add New Tag`: Cria nova Tag na aba de Tag atual;
+  - `Description`: Adicione um texto com descrição para o item salvo;
+  - `Info`: Campo com resumo de informações do RIG selecionado para salvar novo item de banco;
+  - \*`Set Status`: Define o status do item no ato de salvar;
+  
+  \*Disponível somente para usuários com permissão para edição de itens da BirdoLibrary!    
+  
+</details>
 
 ### BD_BirdoLineControl !["BD_BirdoLineControl icon"](./animation/BD_BirdoLineControl.png)
 Ferramenta para controlar a linha do RIG ou drawing selecionado.
@@ -71,8 +103,7 @@ Ferramenta para posar um mebro específico do *_RIG_ desenhando todas peças em 
 
 ### BD_Mirror !["BD_Mirror icon"](./animation/BD_Mirror.png)
 Ferramenta para copiar a pose do membro selecionado para o membro oposto
-Selecione qualquer peca de um membro e aperte!
-(somente funciona em bracos e pernas)
+Selecione qualquer peça de um membro do RIG (braçou ou perna) para copiar a pose do membro selecionado para o membro oposto.
 
 
 ### BD_RepaintDrawing !["BD_RepaintDrawing icon"](./animation/BD_RepaintDrawing.png)
