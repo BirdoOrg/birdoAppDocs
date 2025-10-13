@@ -1,7 +1,7 @@
 ---  
-sidebar_position: 1
+sidebar_position: 2
 title: "BirdoASSET"
-description: "Biblioteca de _RIGs_ de todos _Assets_ da produção."
+description: "Biblioteca de RIGs de todos Assets da produção."
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -20,7 +20,7 @@ A estrutura de arquivos do _BirdoASSET_ fica armazenada no caminho `./_tbLib/Bir
   <TabItem value="hierarchy" label="Hierarquia" default>
     A hierarquia desta biblioteca é dividida por:
 
-    [` Tipo de Asset `](#tipos-de-assets) >> [` Nome Raiz do Asset `](##nomenclatura-de-assets) >> [` versão do rig `](#versionamento-de-rigs) >> ` Nome da 'variação' do _Asset_ `
+    [` Tipo de Asset `](#tipos-de-assets) >> [` Nome Raiz do Asset `](#nomenclatura-de-assets) >> [` versão do rig `](./rig.md#versionamento-de-rigs) >> ` Nome da 'variação' do _Asset_ `
 
     Sendo o "Nome Raiz" o nome principal do _Asset_ que vai definir o valor de index do prefixo, e o "Nome de Variação" que define o nome do _Asset_.
 
@@ -102,5 +102,3 @@ Prefixo (duas primeiras letras do tipo de asset + index do asset) + Nome do Asse
 | Ex: | _CH_ | _001_ | _Personagem_ |
 > Nome: _CH001_Personagem_
 
-## Versionamento de RIGs
-O versionamento de RIGs é feito baseado na estrutura de nodes do RIG, no ato de salvar com o ["Salvar TPL"](../funcionalidades/menu/index.mdx#salvar_tpl), gerando um arquivo `_rigINFO.v00.json` com a informação na estrutura de pastas.
