@@ -5,7 +5,7 @@ title: "Instalação"
 
 # # Instalação
 
-## tl;dr
+## Resumo
 
 Para iniciar a instalação do BirdoApp no Windows, abra o programa Powershell (ou Terminal) e cole a primeira linha a seguir e pressione a tecla `ENTER`.
 
@@ -23,7 +23,7 @@ Depois disso basta seguir as orientações.
 
 ## Isso é seguro?
 
-Sim. Esse é o método indicado para instalar o BirdoApp em seu computador e ele é seguro. Copiar comandos encontrados online e executá-los em seu computador pode ser um risco se você não souber o que está acontecendo. Mas você pode conferir a seguir o que cada comando executa em seu computador.
+Sim, esse é o método indicado para instalar o BirdoApp em seu computador e ele é seguro. Copiar comandos encontrados online e executá-los em seu computador pode ser um risco se você não souber o que está acontecendo. Mas você pode conferir a seguir o que cada comando executa em seu computador.
 
 ## O que esses comandos fazem com o meu computador?
 
@@ -42,4 +42,4 @@ O segundo comando é separado em duas partes pelo símbolo `|`. A primeira parte
 
 ## Porquê a instalação é feita desse jeito?
 
-Para que o BirdoApp possa funcionar como esperado é necessário que cada uma das oito etapas descritas acima seja executada em seu computador e é o script de instalação tem a tarefa de preparar tudo isso. Distribuir o BirdoApp dessa forma permite que o processo de instalação possa ser atualizado mais dinamicamente. Caso o BirdoApp ganhe uma nova funcionalidade que exija que algo seja feito durante a instalação, basta fazer uma alteração no próprio script de instalação para que a versão mais atualizada já esteja disponível e não seria necessário gerar um novo instalador executável, por exemplo.  
+Para que o BirdoApp funcione conforme o esperado, é necessário que cada uma das oito etapas descritas anteriormente sejam executadas em seu computador, e o script de instalação tem a responsabilidade de preparar tudo isso. Distribuir o BirdoApp dessa forma permite que o processo de instalação seja atualizado de maneira mais dinâmica. Caso o BirdoApp ganhe uma nova funcionalidade que exija alguma ação durante a instalação, basta alterar o próprio script de instalação para que a versão mais recente fique disponível. Dessa forma, não é necessário gerar um novo instalador executável, por exemplo.

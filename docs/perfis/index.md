@@ -9,9 +9,9 @@ Diferentes profissionais trabalham com o BirdoApp. Na tabela a seguir uma descri
 |--------|-----------|
 | Artista de Setup | Prepara a cena para que o animador possa começar a trabalhar. |
 | Designer | Cria e modifica props e personagens. |
-| Rigger | A partir de um design de personagem aprovado, prepara rig prevendo todas as possibilidades de animação. |
+| Rigger | A partir de um design de personagem aprovado, prepara o rig prevendo todas as possibilidades de animação. |
 | Artista de Animação | Realiza todas as etapas da animação a partir do setup até a aprovação da animação. |
-| Artista de Comp | Realiza a pós produção das cenas no Harmony, ou prepara os arquivo para que a pós possa ser realizada em outro software. |
+| Artista de Comp | Prepara a cena para o animador trabalhar, incluindo o animatic, organizando os assets: props e personagens, cenários e eventuais referências. |
 | Produtor(a) | Configura projetos no BirdoApp, adicionando episódio, cenas, ou atualizando animatics. |
 | Técnico(a) | Manutenção do projeto, execução de tarefas em série. |
 
