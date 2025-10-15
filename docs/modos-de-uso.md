@@ -24,7 +24,7 @@ Esse modo é ideal para:
 * Estudos e experimentos pessoais.
 * Desenvolvimento individual de assets e testes.
 
-## Modo _Para Estúdios_
+## Modo _Para Estúdios_ {#modo-estudio}
 
 Voltado para produções colaborativas, quando você trabalha dentro de um fluxo organizado pelo seu estúdio de animação.
 
