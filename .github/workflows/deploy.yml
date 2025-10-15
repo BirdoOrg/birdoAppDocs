@@ -23,6 +23,8 @@ jobs:
         run: npm ci
       - name: Build website
         run: npm run build
+      - name: Include VLibras
+        run: sed -i "s|</body>|$(cat ./static/vlibras.min.html)\n</body>|" index.html
       - name: Set up runner Git
         run: |
           git config user.email "birdostudio@noreply.birdo.com"
