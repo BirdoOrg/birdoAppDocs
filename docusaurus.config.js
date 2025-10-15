@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'BirdoApp',
-  tagline: 'Dinosaurs are cool',
+    tagline: 'Bem vindo(a) à documentação do BirdoApp!',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -33,7 +33,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'pt-BR',
-    locales: ['pt-BR'],
+    locales: ['pt-BR']
   },
 
   presets: [
@@ -74,7 +74,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/birdoApp-social-card.png',
       navbar: {
         title: 'BirdoApp',
         logo: {
@@ -88,9 +88,24 @@ const config = {
             position: 'left',
             label: 'Documentação',
           },
+	  {
+	    href: '/docs/visao-geral',  
+	    label: 'Sobre o BirdoApp',
+	    position: 'left',
+	  },
+	  {
+	    href: '/docs/modos-de-uso#modo-standalone',  
+	    label: 'Para Artistas',
+	    position: 'left',
+	  },
+	  {
+	    href: '/docs/modos-de-uso#para-estudios',  
+	    label: 'Para Estúdios',
+	    position: 'left',
+	  },
 //          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/BirdoOrg/BirdoApp',
             label: 'GitHub',
             position: 'right',
           },
@@ -100,33 +115,45 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentação',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Introdução',
                 to: '/docs/intro',
               },
+              {
+                label: 'Visão Geral',
+                to: '/docs/visao-geral',
+              },
+              {
+                label: 'Instalação',
+                to: '/docs/instalacao',
+              },
+              {
+                label: 'Perfis',
+                to: '/docs/perfis/',
+              }
             ],
           },
           {
-            title: 'Community',
+            title: 'Birdo',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Site',
+                href: 'https://www.birdo.com.br/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Instagram',
+                href: 'http://instagram.com/birdostudio',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/birdostudio/',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Outros',
             items: [
 //              {
 //                label: 'Blog',
@@ -134,12 +161,11 @@ const config = {
 //              },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/BirdoOrg/BirdoApp',
               },
             ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+          },        ],
+        copyright: `Copyright © ${new Date().getFullYear()} BirdoApp, Birdo. Feito com  Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
@@ -147,7 +173,7 @@ const config = {
       },
     }),
     plugins: [[ require.resolve('docusaurus-lunr-search'), {
-	languages: ['en', 'de'] // language codes
+	languages: ['pt'] // language codes
     }]],
 };
 
