@@ -5,7 +5,7 @@ title: "Configuração Inicial"
 
 > _Passo-a-passo da configuração inicial do BirdoApp para **produtores**._
 
-Diferente de artistas que trabalham principalmente com o Toon Boom Harmony e que podem querer trabalhar na [modo _standalone_](../../modos-de-uso#modo-standalone) do BirdoApp, produtores estarão trabalhando na [modo _para estúdio_](../../modos-de-uso#modo-para-estúdios). A seguir as etapas necessárias para fazer a configuração inicial do BirdoApp:
+Diferente de artistas que trabalham principalmente com o Toon Boom Harmony e que podem querer trabalhar na [modo _standalone_](../../modos-de-uso#modo-standalone) do BirdoApp, produtores estarão trabalhando na [modo _para estúdio_](../../modos-de-uso#modo-estudio). A seguir as etapas necessárias para fazer a configuração inicial do BirdoApp:
 
 ### 1) Informações básicas
 

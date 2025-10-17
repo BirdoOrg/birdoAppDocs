@@ -21,7 +21,7 @@ A estrutura de arquivos do _BirdoLibrary_ fica armazenada no caminho `./_tbLib/B
 
     ` Nome do Asset ` >> [`versão do rig`](./rig.md#versionamento-de-rigs)  >> ` Numero do item no padrão 0001`
 
-    > Sendo o "Nome do Asset" o nome principal do _Asset_ **SEM prefixo**, e a "versão do RIG" definida pela estrutura do RIG salvo na ["BirdoASSET"](./birdo-assets.md#versionamento-de-rigs).
+    > Sendo o "Nome do Asset" o nome principal do _Asset_ **SEM prefixo**, e a "versão do RIG" definida pela estrutura do RIG salvo na ["BirdoASSET"](./birdo-assets.md).
 
   </TabItem>
   <TabItem value="folders" label="Pastas">

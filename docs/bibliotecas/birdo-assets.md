@@ -7,10 +7,10 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 Esta é a biblioteca responsável por gerenciar os _RIGs_ de todos _Assets_ do projeto. Organizado por uma lógica que favorece o versionamento dos _RIGs_, a _BirdoASSET_ é gerenciada pelas feramentas: 
-- ["Salvar TPL"](../funcionalidades/menu/index.mdx#salvar_tpl) `Ferramenta que salva itens novos na BirdoASSET`
-- ["Importar ASSET"](../funcionalidades/menu/index.mdx##importar_assets) `Interface para acessar a BirdoASSET e selecionar Assets para importar no Harmony`
+- ["Salvar TPL"](../funcionalidades/menu/index.mdx#salvar-tpl) `Ferramenta que salva itens novos na BirdoASSET`
+- ["Importar ASSET"](../funcionalidades/menu/index.mdx#importar-assets) `Interface para acessar a BirdoASSET e selecionar Assets para importar no Harmony`
 
-> A ferramenta ["Salvar TPL"](../funcionalidades/menu/index.mdx#salvar_tpl) está disponível somente para os ["artistas de RIG"](../perfis/rigger/gerenciar.md), através do ["Menu BirdoApp no Harmony"](../funcionalidades/menu/index.mdx) A ferramenta ["Importar ASSET"](../funcionalidades/menu/index.mdx##importar_assets) está disponível para todos arquivos de harmony do projeto (ASSET ou CENA) e acessível também pelo ["Menu BirdoApp no Harmony"](../funcionalidades/menu/index.mdx).
+> A ferramenta ["Salvar TPL"](../funcionalidades/menu/index.mdx#salvar-tpl) está disponível somente para os ["artistas de RIG"](../perfis/rigger/gerenciar.md), através do ["Menu BirdoApp no Harmony"](../funcionalidades/menu/index.mdx) A ferramenta ["Importar ASSET"](../funcionalidades/menu/index.mdx#importar-assets) está disponível para todos arquivos de harmony do projeto (ASSET ou CENA) e acessível também pelo ["Menu BirdoApp no Harmony"](../funcionalidades/menu/index.mdx).
 
 ## Estrutura
 A estrutura de arquivos do _BirdoASSET_ fica armazenada no caminho `./_tbLib/BirdoASSET/` na raiz do projeto, dividida com uma lógica que favorece a organização por versionamento de cada item.

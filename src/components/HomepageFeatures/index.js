@@ -4,42 +4,47 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Instale',
+    Svg: require('@site/static/img/instale.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Siga o passo a passo de instalação
+	e comece a usar agora mesmo!
       </>
     ),
+    link: 'docs/instalacao',
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Aprenda',
+    Svg: require('@site/static/img/aprenda.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Assita os <b>tutoriais</b> e conheça as
+	principais funcionalidades.
       </>
     ),
+    link: 'https://www.youtube.com/',
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Ajuda',
+    Svg: require('@site/static/img/ajuda.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Encontrou algum problema? Peça ajuda, ou
+	compartilhe soluções com outros usuários.
       </>
     ),
+    link: 'https://www.youtube.com/',
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, description, link}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <a href={link} target="_blank">
+          <Svg className={styles.featureSvg} role="img" />
+	</a>  
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

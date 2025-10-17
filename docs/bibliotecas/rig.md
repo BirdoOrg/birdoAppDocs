@@ -61,7 +61,7 @@ Todo Grupo de nodes salvo com essa nomenclatura padrão, será reconhecido como 
 
 ## Versionamento de Rigs
 O que define o versionamento de um ["grupo de banco"](#grupos-de-banco) de um RIG, é a estrutura de nodes dentro deste grupo. 
-Todo RIG na hora que for salvo na ["BirdoASSET"](../funcionalidades/menu/index.mdx#salvar_tpl), terá registrado toda lista de nodes do grupo de banco que conter dentro dele em um arquivo `_rigINFO.v00.json` na ["estrutura"](./birdo-assets.md#estrutura) de pastas do _BirdoASSET_, e esta lista definirá sua versão. Sendo assim, o banco gerado pela BirdoLibrary somente estará disponível para aquela versão.
+Todo RIG na hora que for salvo na ["BirdoASSET"](../funcionalidades/menu/index.mdx#salvar-tpl), terá registrado toda lista de nodes do grupo de banco que conter dentro dele em um arquivo `_rigINFO.v00.json` na ["estrutura"](./birdo-assets.md#estrutura) de pastas do _BirdoASSET_, e esta lista definirá sua versão. Sendo assim, o banco gerado pela BirdoLibrary somente estará disponível para aquela versão.
 :::tip
    Somente crie banco da ["BirdoLibrary"](./birdo-library.md) quando já estiver na versão final e aprovada do RIG para evitar gerar banco para uma versão não mais utilizada na produção.
 :::
@@ -130,11 +130,9 @@ Exemplo prático de versionamento com um _RIG_ fictício de um personagem chamad
   </TabItem>
 </Tabs>
 
-
 ## Clone de Membros
 Para um RIG mais eficiente, uma técnica que sugerimos usar é o _Clone_ de grupos de membros do _RIG. 
 
 > entende-se como "grupos de membros" um grupo de nodes de braço, ou pernas por exemplo!
 
 Essa técnica se baseia em estruturar os membros do _RIG_ (como braços e pernas) em grupos, e clonar o membro oposto com a opção "Clone Drawings Olny" do Harmony, e reposicionar o grupo clonado usando o node "_Static-Transformation_";
-
