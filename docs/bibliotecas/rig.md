@@ -129,3 +129,12 @@ Exemplo prático de versionamento com um _RIG_ fictício de um personagem chamad
     ``` 
   </TabItem>
 </Tabs>
+
+
+## Clone de Membros
+Para um RIG mais eficiente, uma técnica que sugerimos usar é o _Clone_ de grupos de membros do _RIG. 
+
+> entende-se como "grupos de membros" um grupo de nodes de braço, ou pernas por exemplo!
+
+Essa técnica se baseia em estruturar os membros do _RIG_ (como braços e pernas) em grupos, e clonar o membro oposto com a opção "Clone Drawings Olny" do Harmony, e reposicionar o grupo clonado usando o node "_Static-Transformation_";
+
