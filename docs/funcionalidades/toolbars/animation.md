@@ -5,6 +5,8 @@ description: "Toolbar dedicado as ferramentas de animação."
 ---
 import importedSelDown from './animation/BD_SelectNodeDown.gif'
 import importedSelUp from './animation/BD_SelectNodeUp.gif'
+import importedBD_Mirror from './animation/BD_Mirror.gif'
+import importedBD_ResetSpecial from './animation/BD_ResetSpecial.gif'
 import importedIterfaceBirdoLib from './animation/BirdoLib-interface.png'
 
 !["Toolbar de Animação"](./animation/toolbar.png)
@@ -87,13 +89,36 @@ Esta ferramenta seleciona uma POSE ou ANIMAÇÃO na timeline do grupo de banco d
 
 ### BD_BirdoLineControl !["BD_BirdoLineControl icon"](./animation/BD_BirdoLineControl.png)
 Ferramenta para controlar a linha do RIG ou drawing selecionado.
+
+
+**Modo de uso:** Selecione um node do RIG, e escolha no campo `Apply To` se deseja aplicar os valores a todo RIG ou apenas aos nodes selecionados.
+
+:::info
+   Esta ferramenta é facilitador de seleção de nodes de drawings para ativar os parâmetros de "Line Thickness" dos nodes de _Drawings_ do _Harmony.
+:::
+:::tip
 De preferencia usar depois da animacao ja aprovada, e com movimentos de camera definidos!
+:::
+
+<details>
+  <summary>Interface</summary>
+  
+  !["BD_BirdoLineControl interface"](./animation/BD_BirdoLineControl-interface.png)
+
+  - `Enable Line Control`: Este checkbox define se será usado a modulação de linha do harmony (ativa o parametro "Adjust Pencil Line Thickness" da aba "Line Thickness" de parametro de node de drawing). 
+  - `Apply To`: Estas opções definem as opções de seleção: aplica ao `Rig Group` ou apenas os nodes selecionados: `Only Selected Nodes`;
+  - `Options`: Define os valores de "Line Thickness";
+   1. `Deformation`: Define os valores de "Line Thickness" para deformers;
+   2. `Line Control`: Define se vai usar um valor padrão calculado (`Use Defalt`) ou se pretende escolher um valor manualmente (`Choose`);
+   3. `Scale Style`: Modifica os valores do parâmetro "Scale Independent" do "Line Thickness" do node _Drawing_;
+  - `Close After Apply`: Fecha a interface depois de aplicar os valores;
+</details>
 
 
 ### BD_FULLAnimation !["BD_FULLAnimation icon"](./animation/BD_FULLAnimation.png)
 Ferramenta para posar um mebro específico do *_RIG_ desenhando todas peças em somente um drawing.
 
-**como usar?**
+**Modo de uso:**
 - selecione o drawing do membro que deseja desenhar no FULL;
 - aperte normal: ira jogar todos drawings do membro para o Zzero e selecionar o FULL pra vc.
 - aperte com shift pressionado: seleciona o node FULL sem zerar os outros desenhos. 
@@ -103,22 +128,73 @@ Ferramenta para posar um mebro específico do *_RIG_ desenhando todas peças em 
 
 ### BD_Mirror !["BD_Mirror icon"](./animation/BD_Mirror.png)
 Ferramenta para copiar a pose do membro selecionado para o membro oposto
-Selecione qualquer peça de um membro do RIG (braçou ou perna) para copiar a pose do membro selecionado para o membro oposto.
+**Modo de Uso**: Selecione qualquer peça de um membro do RIG (braçou ou perna) para copiar a pose do membro selecionado para o membro oposto.
+
+:::warning
+   Esta ferramenta depende de uma estrutura de RIG de _clone_ de membros! Aprenda mais sobre ["aqui"](../../bibliotecas/rig#clone-de-membros);
+:::
+<div style={{ textAlign: 'left'}}> <img src={importedBD_Mirror} width='500' /> </div>
 
 
 ### BD_RepaintDrawing !["BD_RepaintDrawing icon"](./animation/BD_RepaintDrawing.png)
-Use este script para REPINTAR as as linhas e shapes de todos drawings do node selecionado.
+Ferramenta para REPINTAR as as linhas e shapes de todos drawings do node selecionado.
+
+**Modo de Uso:** Selecione um node de drawing e defina os parametrôs na interface.
+
+<details>
+
+  <summary>Interface</summary>
+  
+  !["BD_RepaintDrawing interface."](./animation/BD_RepaintDrawing-interface.png)
+
+  - `Lines`: Este checkbox habilita a escolha de cor para todas "Lines" dos _drawings_; 
+  - `Shapes`: Este _checkbox_ habilita a escolhga de cor dos preenchimentos do _drawing_;
+  - `Select Color`: Define a cor de cada parte;
+  - `Advanced`: escolhe quais drawings deverão ser afetados pelas opções de cor escolhidas;
+   1. `Current Frame`: Apenas o drawing do frame atual;
+   2. `Timeline Exposed`: Apenas os drawings expostos da _Timeline_;
+   3. `All Drawings`: Todos _drawings_ do node selecionado;
+  - `Layers`: Seleciona quais "_layers-arts_" para repintar os drawings; 
+</details>
 
 
 ### BD_ResetSpecial !["BD_ResetSpecial icon"](./animation/BD_ResetSpecial.png)
-Use esse Script para resetar o Drawing Selecionado, 
-o Deform e a Peg deste drawing. 
+Esta ferramenta é uma opção mais avançada do _reset Transformation_ padrão do _Harmony_:
+- _Reset_ do node _Drawing_ caso ele tenha _keyframes_;
+- _Reset_ do Deform acima do node _Drawing_, caso exista;
+- _Reset da _PEG_ acima do node _Drawing_ selecionado;
+
+**Mode de Uso:** Selecione o node de drawing, e aperte o botão. Para _resetar_ o grupo inteiro do node selecionado, pressione _shift_ ao apertar o botão!
 Pressione "Shift" e reseta o grupo inteiro.
+<div style={{ textAlign: 'left'}}> <img src={importedBD_ResetSpecial} width='500' /> </div>
 
 
 ### BD_StrokeThicknessControl !["BD_StrokeThicknessControl icon"](./animation/BD_StrokeThicknessControl.png)
-Use este e uma ferramenta de drawing, para editar a espessura da linha criando pontos 
+Ferramenta de drawing, para editar a espessura da linha criando pontos de modulação de drawing na _line_ selecionada. 
 conforme configurado na interface.
+
+**Modo de Uso:** Selecione com a ferramenta de seleção de _drawing_ a parte do desenho que pretente editar as _lines_ do desenho.
+
+:::info
+   Os pontos de modulação de linhas aqui citados, são os mesmo pontos criados e editados com a ferramenta _"Pencil Editor"_ do _Harmony_
+:::
+
+<details>
+
+  <summary>Interface</summary>
+  
+  !["BD_RepaintDrawing interface."](./animation/BD_StrokeThicknessControl-interface.png)
+
+  - `Random`: Marca o modo aleatório para criação dos pontos de modulação de _line_; 
+  - `Alternate`: Muda para o modo alternado da criação de pontos. Determinando espaçamento iqual entre os pontos;
+  - `Refresh`: Aplica os valores definidos;
+  - `Points`: define o número de pontos a serem criados na line selecionada;
+  - `LineThickness`: define o valor máximo e minimo dos pontos de modulação; 
+  - `Mode`: Muda o modo de aplicação dos pontos: `Points` cria o número exato de pontos definidos, `Length` cria pontos baseados no tamanho da distancia dado e varia no número final de pontos dependendo do comprimento da _line_ selecionada;
+  - `CLEAR Stroke`: Limpa todos os pontos de modulação de espessura da _line_;
+  - `Fine Tips`: Força um afinamento das _lines_ nos ultimos pontos dela;
+  
+</details>
 
 
 ### BD_Select_Up_Node
