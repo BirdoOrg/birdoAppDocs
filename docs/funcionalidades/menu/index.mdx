@@ -3,22 +3,90 @@
   sidebar_position: 2
 ---
 
+Menu superior dentro do _Harmony_ do BirdoApp com as principais ferramentas de pipeline. Neste menu, as
 
-Menu superior dentro do _Harmony_ do BirdoApp com as principais ferramentas de pipeline.
+:::info
+   Os itens do menu BirdoApp são filtrados por uma série de critérios de Modo de Uso, Tipo de Arquivo e tipo de usuários.
+:::
+
+### Disponibilidade de Ferramentas
+| | _Modo Standalone_ | _Modo Estúdio_ | Arquivo CENA | Arquivo ASSET | Supervisão | Usuário Padrão |
+|-|:-:|:-:|:-:|:-:|:-:|:-:|
+| ["Abrir Diretório"](#abrir-diretório) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| ["Renderizar"](#renderizar) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| ["Publicar"](#abrir-diretório) | :x: | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :white_check_mark: |
+| ["Salvar tpl"](#salvar-tpl) | :x: | :white_check_mark: | :x: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| ["Importar Assets"](#importar-assets) | :x: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| ["Criar Note"](#criar-note) | :x: | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :x: |
+| ["Enviar Notes"](#enviar-notes) | :x: | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :x: |
+| ["Importar Notes"](#importar-notes) | :x: | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :white_check_mark: |
+| ["Atualizar Setup"](#atualizar-setup) | :x: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+
+
+### Abrir Diretório
+Abre o diretório do arquivo Harmony no explorer.
 
 
 ### Atualizar Animatic
 Atualiza o node de animatic da cena, se houver um animatic mais atual na rede.
 
+:::info
+   O arquivo de animatic na estrutura do projeto, tem no padrão de nome o versionamento. Essa ferramenta se baseia nessa versão comparando com a versão do node "Animatic_v00" dentro do grupo _ANIMATIC_ do _SETUP_!
+   Se a versão encontrada no animatic relativo a cena na estrutura do projeto for maior que a versão atual do node _ANIMATIC_, ele atualiza. Se não, mostra um aviso que não foi preciso atualizar.
+:::
+
 
 ### Renderizar
-Exporta localmente os frames do arquivo para os formatos desejados.
+Interface com opções customizadas para renderizar o arquivo.
+
+:::info
+   Esta ferramenta depende da estrutura de setup de ASSET e CENA do BirdoaApp para funcionar todas opções disponíveis.
+:::
+
+**Modo de Uso:** Escolha a opção de render na interface, e o destino da mídia de saída.
+
+<details>
+  <summary>Interface</summary>
+
+  !["save tpl interface"](./renderizar-interface.png)
+  - `Opções Extras de Camadas do Setup`: Marque as camadas de SETUP que pretende habilitar ou desabilitar na saída final;
+  1.1 `LineUp`: Referencia de lineup do SETUP;
+  1.2 `ColorCard`: Cor de fundo do SETUP;
+  1.3 `Referências`: Camada com referências do SETUP;
+  - `Saída`: Define tipo de saída de mídia:
+  1.1 `Imagens`: define como sequência de imagens (habilita a opção para escolher formato de imagem);
+  1.2 `GIF`: define saída como GIF animado. (Habilita opção de frame rate);
+  1.3 `Vídeo`: define saída como vídeo no formato `.mov`;
+  `Start - End`: define intervalo de frames do arquivo para exportar \*
+  `Folder`: escolha o destino das mídias;
+  `Nome Arquivo`: define nome de saída do arquivo (sem formato)
+  `Render Display`: Define o _display_ do arquivo para renderizar;
+
+  \*Para a opção `GIF`, esta opção de intervalo de frames não funciona corretamente nesta versão do BirdoaApp!
+
+  :::tip
+    Use a pasta 'frames' no folder do arquivo para organizar suas mídias!
+  :::
+</details>
 
 
 ### Publicar
-Abre interface para fazer o publish do arquvio de cena,
-gerando uma copia versionada e compactada na estrutura de cenas do projeto.
+Esta ferramenta envia uma cópia _.zip_ da cena compatada e versionada para o servidor do projeto, ficando disponível para todos usuários.
 
+> O _PUBLISH_ respeita a ["etapa"](../../terminologia.md#etapa) em que o arquivo foi aberto, e cada etapa tem um diretório próprio para armazenar e versionar os arquivos.
+
+:::info
+   O ["Abrir Cena"](../principais/abrir-cena.md) abre o arquivo considerando a ETAPA baseada pelo tipo de usuário. Ex
+   ```
+   Usuário de SETUP -> ETAPA SETUP
+   Usuários de animação e COMP (ANIM, ANIM_LEAD, COMP) -> ETAPA ANIM\*
+   ```
+   \*No caso da etapa COMP, é considerado o mesmos arquivos do diretório da etapa animação para facilitar o processo de _retake_!
+:::
+
+:::warning
+   O perfil de usuário de DT (direção técnica) permite escolher em qual etapa pretende enviar o arquivo com o publish, e se deseja adicionar o arquivo pra fila da _renderfarm_ caso haja uma configurada!
+:::
 
 ### Salvar tpl
 Esta ferramenta abre interface com opções para salvar o _RIG_ selecionado na ["BirdoASSET"](../../bibliotecas/birdo-assets.md).
@@ -51,23 +119,67 @@ Esta ferramenta abre interface com opções para salvar o _RIG_ selecionado na [
 
 
 ### Importar Assets
-Abre interface para importar um RIG da library do projeto.
+Abre uma interface para navegar na ["BirdoASSET"](../../bibliotecas/birdo-assets.md) e escolher assets da biblioteca de RIGs do projeto e importar diretamente pro arquivo.assets
+
+:::info
+   Ao ser importado para o arquivo, os itens selecionados são importados e jogados soltos na _Node View_ e ainda precisam ser conectados e organizados corretamente!
+:::
+
+**Modo de Uso**: Selecione os itens pela interface com duplo clique, ou com o botão "►", e aperte 'IMPORT'.
+
+<details>
+  <summary>Interface</summary>
+
+  !["save tpl interface"](./import-asset-interface.png)
+  - `Search`: campo de busca de assets por nome;
+  - `Tipos de Assets`: Escolha nesta lista o asset filtrado por ["tipo de asset"](../../bibliotecas/birdo-assets.md#tipos-de-assets);
+  - `Assets`: Escolha o sub-item do asset escolhido. Há duas formas de selecionar um item aqui:
+  1. `Duplo Clique`: Clique duas vezes em um item para enviar ele para a lista de selecionados;
+  2. `Botão "►"`: Selecione um item desta lista e clique no botão "►" para jogar o item para lista de selecionados;
+  - `Assets Selecionados`: Aqui, ficam listados os itens selecionados para importar;
+  - `Preview`: Mostra um preview do item selecionado;
+  - `Clear Cache`: Limpa os arquivos temporários que o script usa para mostrar o preview;
+
+</details>
 
 
 ### Criar Note
-Adiciona um drawing de note.
-(Apenas supervisores).
+Adiciona um novo _node_ de Note no grupo "_NOTES_", e seleciona o _node_ criado para ser usado pra criar o note.
+
+:::info
+   O padrão de nome do _node_ criado é `nt_{ano}{mes}{dia}_00h00m00s` usando o hoário e data que foi criado.
+:::
 
 
 ### Enviar Notes
-Envia note criado na cena com a ferramenta de AddNote;
-(Apenas supervisores).
+Seleciona um _node_ de note existente no grupo "_NOTES_" para ser enviado para o servidor do projeto e ficar disponível para todos usuários.
+
+**Modo de Uso**: Selecione um _node_ na interface e clique em enviar;
+
+:::info
+   Os _nodes_ de note existentes no grupo _NOTES_ são listados na interface:
+
+   !["interface enviar note"](./enviar-note.png)
+:::
 
 
 ### Importar Notes
-Baixa notes da cena atual.
+Seleciona note da CENA do servidor, para importar direto pra CENA.
+
+**Modo de Uso**: Selecione um note na interface e clique em 'baixar';
+
+:::info
+   Os notes existentes da cena serão listados na interface:
+
+   !["interface enviar note"](./importar-note.png)
+
+   OBS: Os notes são importados diretamente para o grupo _NOTES_!
+:::
 
 
 ### Atualizar Setup
-Atualiza os elementos do setup do projeto, como lineup e nodes de informacao 
-do projeto contidos no Setup base do projeto.
+Atualiza os elementos do SETUP do projeto, como lineup e nodes de informação do projeto contidos no Setup base do projeto.
+
+:::info
+   O arquivo template de SETUP, tanto de CENA quanto de ASSET pode ser atualizado na pasta de configuração do projeto, e os elementos modificados serão atualizados com essa ferramenta!
+:::
