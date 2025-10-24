@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbirdo_app_docs=self.webpackChunkbirdo_app_docs||[]).push([[2589],{2589:(p,s,c)=>{c.r(s)}}]);
