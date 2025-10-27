@@ -1,8 +1,5 @@
 {
     "label": "Artista de setup",
     "position": 1,
-    "link": {
-	"type": "generated-index",
-	"description": "Funcionalidades disponíveis para artistas de setup:\n(EM CONSTRUÇÃO)"
-  }
+    "link": {type: 'doc', id: 'perfis/artista-setup/gerenciar'}
 }
