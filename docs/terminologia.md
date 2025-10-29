@@ -102,3 +102,7 @@ Elemento de cena em desenho vetorial (mesmo dos personagens).
 No mundo do Toon Boom Harmony um /template/ quer dizer um arquivo do próprio Harmony, normalmente de extensão `.tpl`, que é preparado para ser importado em outro arquivo. Normalmente trata-se de um prop, ou uma animação de banco. Mas no contexto do funcionamento do BirdoApp um template é uma estrutura base de arquivo do Harmony utilizado para gerar novos arquivos de Harmony (cena ou template). O BirdoApp vem com um template padrão para a criação de arquivos `.xstage` e `.tpl`, mas novos templates podem ser criados para atender necessidades específicas de cada projeto. Por exemplo, um projeto que será distribuído em HDR (alto espectro de cor dinâmico) vai precisar que os templates (arquivos base) contenham configurações específicas de cor.
 
 Quando esse termo for utilizado nessa documentação será seguido de uma menção explícita de sobre o que se está falando: arquivo `.tpl` de reuso no Harmony, ou base para geração de novos arquivos.  
+
+## Zzero
+
+Nomenclatura definida para uma exposição de _drawing_ vazia. Sem Nenhuma desenho, para poder _zerar_ o desenho em uma exposição e ter mais opção pra animar do que apenas deletar a exposição na _timeline_.
