@@ -1,8 +1,5 @@
 {
     "label": "Rigger",
     "position": 3,
-    "link": {
-	"type": "generated-index",
-	"description": "Funcionalidades disponíveis para riggers:\n(EM CONSTRUÇÃO)"
-  }
+    "link": {type: 'doc', id: 'perfis/rigger/gerenciar'}
 }
