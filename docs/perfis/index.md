@@ -19,7 +19,7 @@ Você pode conferir uma lista de funcionalidades disponíveis para cada um dos p
 
 - [Artista de Setup](../perfis/artista-setup/gerenciar)
 - [Designer](../category/designer)
-- [Rigger](../category/rigger)
+- [Rigger](../perfis/rigger/gerenciar)
 - [Artista de Animação](../perfis/artista-de-animacao/gerenciar)
 - [Artista de Comp](../category/artista-de-comp)
 - [Produtor(a)](../category/produtora)
