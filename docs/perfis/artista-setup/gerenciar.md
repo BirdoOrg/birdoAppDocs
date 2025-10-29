@@ -1,5 +1,3 @@
-# Funcionalidade
-
 # Instalação
 
 O primeiro passo é instalar o BirdoApp no seu computador.
@@ -34,5 +32,10 @@ Escolha o modo que melhor se aplica ao seu fluxo de trabalho.
 Após a seleção do modo, o BirdoApp carrega a janela principal com as ferramentas disponíveis.
 Essas ferramentas variam conforme o projeto (no modo Estúdio) ou o template (no modo Solo).
 
-👉 Confira a lista de funcionalidades disponíveis em:
+Para o artista de setup usando o modo Solo, essas são ferramentas disponiveis:
+
+* ***Abrir Cenas***: Ferramenta lista as cenas de toonboom disponiveis no servidor para a etapa de setup.
+
+👉 Confira a lista completa de funcionalidades disponíveis em:
 [Guia de funcionalidades](./../../funcionalidades/principais)
+
