@@ -1,8 +1,5 @@
 {
     "label": "Designer",
     "position": 2,
-    "link": {
-	"type": "generated-index",
-	"description": "Funcionalidades disponíveis para designers:\n(EM CONSTRUÇÃO)"
-  }
+    "link": {type: 'doc', id: 'perfis/designer/gerenciar'}
 }
