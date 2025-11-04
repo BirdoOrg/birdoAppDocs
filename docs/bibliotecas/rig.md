@@ -136,3 +136,15 @@ Para um RIG mais eficiente, uma técnica que sugerimos usar é o _Clone_ de grup
 > entende-se como "grupos de membros" um grupo de nodes de braço, ou pernas por exemplo!
 
 Essa técnica se baseia em estruturar os membros do _RIG_ (como braços e pernas) em grupos, e clonar o membro oposto com a opção "Clone Drawings Olny" do Harmony, e reposicionar o grupo clonado usando o node "_Static-Transformation_";
+
+
+## Node FULL
+Uma sugestão para estrutura de RIGs é, além de separar os membros em grupos, adicionar um node que convencionamos em chamar de "NODE FULL".
+Basicamente, se trata de um node vazio, para ser usado como alternativa de animação full, somente para o membro do RIG em situações que faça sentido, em quantos frames julgar necessário. 
+
+> Exemplo de uso: Criar um frame de "_smear_" de um braço, você pode usar o node FULL para desenhar tudo mais simples em uma única camada, em vez de precisar fazer individualmente por peças do RIG do braço.
+
+
+:::tip
+   Uma sugestão é usar o parametro "" nas propriedades do node drawing FULL, como "". Isso vai forçar o _pivot_ da peg variar conforme o desenho do node FULL! 
+:::
