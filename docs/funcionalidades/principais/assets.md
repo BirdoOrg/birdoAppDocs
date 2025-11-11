@@ -5,11 +5,9 @@ image: "./assets-icon.png"
 ---
 import importedCriar from './assets-criar.png'
 import importedAbrir from './assets-abrir.png'
-import importedLogo from './assets-icon.png'
 
 
-<div style={{ textAlign: 'left'}}> <img src={importedLogo} width='100' /> </div>
-# ASSETS
+# ASSETS ![](./assets-icon.png)
 Interface do BirdoApp para criar ou abrir arquivos de assets do projeto. Arquivos estes, aqui chamados de “stage”, que são arquivos para desenvolver os assets e gerar os templates para library.
 
 ## CRIAR ARQUIVO
