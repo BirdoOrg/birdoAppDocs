@@ -9,7 +9,7 @@ title: "Configuração"
 
 O BirdoApp precisa de algumas configurações para funcionar da forma esperada. Na prática essas configurações são pequenos arquivos de texto, escritos no formato `json`, que guardam informações que o BirdoApp precisa consultar durante seu funcionamento.
 
-Basicamente são 3 configurações necessãrias, dependendo do [modo de uso](./modos-de-uso) utilizado ou da função que você estiver exercendo no projeto. A seguir a explicação de cada uma delas.
+Basicamente são 3 configurações necessárias, dependendo do [modo de uso](./modos-de-uso) utilizado ou da função que você estiver exercendo no projeto. A seguir a explicação de cada uma delas.
 
 ## Configuração de usuário
 
@@ -18,9 +18,13 @@ Essa configuração é necessária para /todas/ as pessoas que utilizarem o Bird
 Essa configuração acontece na primeira vez que você abre o BirdoApp. Na interface você vai precisar preencher dois campos:
 
 * **Nome**, com seu nome;
-* **Versão do Harmony**, com o caminho do executável do Toon Boom Harmony que você utiliza.
+* **Versão do Harmony**, com a versão de Toon Boom instalada no seu computador que irá utilizar com o BirdoApp;
 
 Essas informações constarão no arquivo `config.json`, na pasta do BirdoApp.
+
+:::tip
+   Evite ["caracteres inválidos"](./terminologia.md#caracteres-inválidos) ou espaços ao escolher o nome de usuário, evitando assim problemas de funcionamento do BirdoApp!
+:::
 
 ## Configuração de estúdio
 
