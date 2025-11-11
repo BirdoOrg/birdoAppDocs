@@ -106,3 +106,7 @@ Quando esse termo for utilizado nessa documentação será seguido de uma menç�
 ## Zzero
 
 Nomenclatura definida para uma exposição de _drawing_ vazia. Sem Nenhuma desenho, para poder _zerar_ o desenho em uma exposição e ter mais opção pra animar do que apenas deletar a exposição na _timeline_.
+
+## Caracteres Inválidos
+
+Consideramos carateres inválidos (ou "_Non-ASCII characters_" em inglês) qualquer caractere não existente na lingue inglesa. Como acentos ou "ç".  
