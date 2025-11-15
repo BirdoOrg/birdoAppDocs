@@ -25,7 +25,7 @@ O RIG precisa seguir a seguinte estrutura de grupos:
 `Top` / `{Grupo MASTER do RIG}` / `{Grupo MASTER de banco do RIG}` / `{Nodes do RIG}` 
 
 > Para exemplificar a estrutura de um RIG, vamos usar a versão `v03` do personagem `CH001_LUPI` do projeto com prefixo `LEB`:
-`Top/CH003_LUPI/LEB.LUPI-v01/...`
+`Top/CH003_LUPI/LEB.LUPI-v03/...`
 <Tabs>
   <TabItem value="asset_name" label="Grupo MASTER do RIG" default>
     O grupo MASTER é o primeiro groupo de node do RIG, na raiz _Top_, e geralmente é usado uma _Peg_ acima desse grupo chamada _'Stage'_ para definir o tamanho e posição inicial do Rig na cena:
