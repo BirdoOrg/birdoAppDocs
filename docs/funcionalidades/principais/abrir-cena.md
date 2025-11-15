@@ -4,16 +4,20 @@ title: "Abrir Cena"
 ---
 
 # ABRIR CENA ![](./abrir-cena-icon.png) 
-Programa do BirdoApp responsável por abrir as cenas de um projeto. 
-Aqui são listadas todas cenas disponíveis na estrutura do servidor do projeto, onde o usuário pode escolher a versão da cena, e abrir localmente uma cópia do arquivo de Harmony para trabalhar.
+Funcionalidade do BirdoApp responsável por abrir as cenas de um projeto. 
+Nela são listadas todas as cenas disponíveis na estrutura do servidor do projeto. O usuário pode escolher a versão da cena e abrir localmente uma cópia do arquivo de Harmony para trabalhar.
+
+> Fluxo de um arquivo de cena no BirdoApp:
+
+!["demo abrir cena"](./demo.gif)
 
 
-### BASE DE ARQUIVOS
-Para o "Abrir Cena" reconhecer uma cena do projeto, basta haver um arquivo de animatic `.mov` com o padrão de nome de cena na estrutura do Espisódio do projeto no caminho: `01_EPISODIOS\{EP}\03_CENAS\00_RENDER\00_ANIMATIC`.
+### Base de Arquivos
+Para o "Abrir Cena" reconhecer uma cena do projeto, precisa haver um arquivo de animatic `.mov` com o padrão de nome de cena na estrutura do Episódio do projeto no caminho: `01_EPISODIOS\{EP}\03_CENAS\00_RENDER\00_ANIMATIC`.
 
-Os dois arquivos bases para uma cena estar disponível são:
+São necessários dois arquivos bases para uma cena estar disponível:
 - **`Arquivo .mov de animatic da cena`** : Arquivo de animatic da cena para reconhecer na interface do "Abrir Cena";
-- **`SETUP básico de Harmony da Cena`** : Arquivo de Harmony com SETUP básico para ser possível abrir a cena;
+- **`SETUP básico de Harmony da Cena`** : Arquivo de Harmony com SETUP básico para ser possível abrir a cena, que é a v01 do arquivo de SETUP da cena;
 
 :::warning
 Se houver um arquivo animatic .mov de uma cena, mas ainda não existir o SETUP básico desta cena, na interface do "Abrir Cena", quando selecionada a cena, aparecerá a mensagem `- SEM SETUP -` no campo de seleção da versão!
@@ -25,10 +29,10 @@ Os arquivos de animatic são versionados, e o que vale para fins de atualizar ou
 
 
 ### Hierarquia das Etapas:
-O Programa respeita a seguinte hierarquia das etapas para abrir as cenas:
+O Programa respeita a seguinte hierarquia das etapas do projeto para abrir as cenas:
 - 👉 `SETUP` > `ANIM` > `COMP`;
 
-Nessa lógica, a versão buscada no servidor, vai sempre respeitar em qual etapa ela será aberta. 
+Nessa lógica, a versão buscada no servidor vai sempre respeitar em qual etapa ela será aberta. 
 O tipo de usuário determina automaticamente em qual etapa abrir a cena. Com exceção do usuário **DT**, que pode escolher na interface em qual etapa deseja abrir cada cena selecionada.
 
 :::info
@@ -44,21 +48,21 @@ O programa respeita uma estrutura separada por Episódios e Cenas para cada etap
 👉 `Episódio` > `Cena` > `Versão` 
 
 :::info
-   É possível configurar o padrão de divisão do projeto na configuração de projetos;
+   É possível configurar o padrão de divisão do projeto na configuração de projetos.
 :::
 
 
-### Copias dos arquivos de cena
-👉 **Cópia Servidor**: É onde os arquivos de cena compactados no formato `.zip` são salvos versionados e disponíveis para todos usuários do projeto;
+### Cópias dos arquivos de cena
+👉 **Cópia Servidor**: É onde os arquivos de cena compactados no formato `.zip` são salvos, versionados e disponíveis para todos usuários do projeto;
 
-👉 **Cópia Local**: É onde o "Abrir Cenas" descompacta a versão da cena selecionada, e abre para o usuário trabalhar no folder local do projeto configurado pelo usuário;
+👉 **Cópia Local**: É onde o "Abrir Cenas" descompacta/salva a versão da cena selecionada, e abre para o usuário trabalhar no **folder local do projeto** configurado pelo usuário;
 
 :::warning
-   O que define a versão de uma cena, é quantas versões já existem desta cena no servidor na hora do [ que a cena foi publicada.](../menu/index.mdx#publicar)
-   Se o artista abrir a cena, e salvar diferentes versões locais, usando o versionamento de `.xstage` padrão  do Harmony, não siginifica que o BirdoApp vai reconhecer esse versionamento local como o final de cada cena. Ele serve somente para organização local do artista!
+   O que define a versão de uma cena, é quantas versões já existem desta cena **no servidor** na hora do [ que a cena foi publicada.](../menu/index.mdx#publicar)
+   Se o artista abrir a cena, e salvar diferentes versões locais, usando o versionamento de `.xstage` padrão  do Harmony, não significa que o BirdoApp vai reconhecer esse versionamento local como o final de cada cena. Ele serve somente para organização local do artista!
 :::
 
-👉 Caso a cena selecionada já existir no computador do artista, abre-se a opção de "Abrir arquivo local" na interface, dando a possibilidade de abrir a cena já existente no computador da pessoa.
+👉 Caso a cena selecionada já exista no computador do artista, abre-se a opção de "Abrir arquivo local" na interface, dando a possibilidade de abrir a cena já existente no computador da pessoa.
 
 👉 Se já houver uma versão local descompactada no computador do artista, e for escolhido uma versão do servidor pra abrir por cima, esta cena existente local é copiada no folder local da cena, com a data e horário como _backup_!
 
