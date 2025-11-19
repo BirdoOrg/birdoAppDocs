@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # UPLOADER ![](./uploader-icon.png)
-Ferramenta desenvolvida para facilitar o dia a dia da equipe de produção.
+Ferramenta desenvolvida para facilitar o dia a dia da equipe de produção, onde é possível fazer o envio (upload) para o servidor de arquivos.
 Aceita arquivos de cenas entregues em .mov (pré-visualizações de vídeo) ou .zip (cenas do Toon Boom Harmony) e cuida de todo o processo de organização.
 Com ele, não é necessário renomear ou procurar pastas: o programa aplica automaticamente o padrão de nomes do projeto e envia cada arquivo para o diretório correto.
 
@@ -25,12 +25,12 @@ liberando tempo para o que realmente importa: a parte criativa da produção.
 
 
 ## Funcionamento:
-O aplicativo funciona de forma simples e intuitiva: os arquivos são adicionados à interface por meio de arraste e solte (drag-and-drop) e aparecem em uma lista vertical no centro da tela.
+A ferramenta funciona de forma simples e intuitiva: os arquivos são adicionados à interface por meio de "arraste e solte" (drag-and-drop) e aparecem em uma lista vertical no centro da tela.
 Essa lista exibe o nome de cada item, o episódio, a cena, a etapa da produção, uma barra de progresso e uma barra de status.
 
 Ao acionar o botão "Executar", o aplicativo processa os arquivos na ordem em que foram listados, garantindo um fluxo de envio organizado e transparente.
 
-### PASSO A PASSO:
+### Passo a Passo:
    👉 Arraste um ou mais arquivos (vídeo no formato `.mov` ou arquivo de cena do harmony em formato compactado `.zip`);
 
    👉 Marque a etapa (`SETUP`, `ANIM` ou `COMP`) de todos itens;
@@ -42,14 +42,14 @@ Ao acionar o botão "Executar", o aplicativo processa os arquivos na ordem em qu
    👉 Acompanhe os logs no terminal;
 
 
-### INTERFACE
+### Interface
 > Exemplo de itens adicionados na interface! <div style={{ textAlign: 'left'}}> <img src={importedItems} width='625' /></div>
 
 <Tabs>
   <TabItem value="geral" label="Geral" default>
     - `Episodio` Drop down que permite escolher o episódio para **TODOS** os arquivos na lista;
     - `Etapa` Drop down que permite escolher a etapa da produção para **TODOS** os arquivos na lista;
-    - `Pegar Número de Cenas` Procura o número das cenas em cada item, e preencher automaticamente o campo `Cena` dos mesmos;
+    - `Pegar Número de Cenas` Procura o número das cenas em cada item, e preenche automaticamente o campo `Cena` dos mesmos;
     - `Executar` Botão que executa o envio para o servidor do projeto;
     - `Limpar` Botão que limpa a lista de arquivos caso queira recomeçar;
     - `Fechar`  Fecha a aplicação;
@@ -69,5 +69,5 @@ Ao acionar o botão "Executar", o aplicativo processa os arquivos na ordem em qu
 
 
 :::info
-   Ao subir arquivos de cena de Harmony com o _Uploader_, se o script reconhecer o node de _Animatic_ na cena, ele vai gerar um mov atualizado e versionado na estrutura do projeto.
+   Ao subir arquivos de cena de Harmony com o _Uploader_, se o script reconhecer o _node_ de _Animatic_ na cena, ele vai gerar um mov atualizado e versionado na estrutura do projeto.
 :::
