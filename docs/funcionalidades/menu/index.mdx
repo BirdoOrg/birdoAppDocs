@@ -37,32 +37,43 @@ Atualiza o node de animatic da cena, se houver um animatic mais atual na rede.
 
 
 ### Renderizar
-Interface com opções customizadas para renderizar o arquivo.
+Ferramenta para renderizar o arquivo de Harmony customizada pelo BirdoaApp. Oferece de forma prática, opções que o render padrão não fornece.
+
+#### Tipos de render:
+👉 Sequencia de Imagens nos formatos png, jpeg e tiff;
+
+👉 GIF animados com qualidade e arquivo de tamanho pequeno;
+
+👉 Vídeo com compressão H264 customizada, juntando qualidade e tamanho pequeno de arquivo no formato mov;
 
 :::info
-   Esta ferramenta depende da estrutura de setup de ASSET e CENA do BirdoaApp para funcionar todas opções disponíveis.
+    Ao contrário do render padrão do Harmony, esta ferramenta **NÃO** utiliza _Write Nodes_ para fazer os renders, e sim nodes de **_Display_**. Facilitando configurar a saída final.
 :::
 
-**Modo de Uso:** Escolha a opção de render na interface, e o destino da mídia de saída.
+:::warning
+   Esta ferramenta depende da estrutura de setup de ASSET e CENA do BirdoaApp para funcionar todas opções de filtro de camadas disponíveis.
+:::
+
+**Modo de Uso:** Escolha o _display_ que deseja renderizar, a opção de render na interface, e o destino da mídia de saída.
 
 <details>
   <summary>Interface</summary>
 
   !["save tpl interface"](./renderizar-interface.png)
   - `Opções Extras de Camadas do Setup`: Marque as camadas de SETUP que pretende habilitar ou desabilitar na saída final;
-     `LineUp`: Referencia de lineup do SETUP;
-     `ColorCard`: Cor de fundo do SETUP;
-     `Referências`: Camada com referências do SETUP;
+    - `LineUp`: Referencia de lineup do SETUP;
+    - `ColorCard`: Cor de fundo do SETUP;
+    - `Referências`: Camada com referências do SETUP;
+  - `Render Display`: Define o _Display_ do arquivo para renderizar (precisa escolher um _Display_ para habilitar as outras opções);
   - `Saída`: Define tipo de saída de mídia:
-     `Imagens`: define como sequência de imagens (habilita a opção para escolher formato de imagem);
-     `GIF`: define saída como GIF animado. (Habilita opção de frame rate);
-     `Vídeo`: define saída como vídeo no formato `.mov`;
-  `Start - End`: define intervalo de frames do arquivo para exportar \*
-  `Folder`: escolha o destino das mídias;
-  `Nome Arquivo`: define nome de saída do arquivo (sem formato)
-  `Render Display`: Define o _display_ do arquivo para renderizar;
-
-  \*Para a opção `GIF`, esta opção de intervalo de frames não funciona corretamente nesta versão do BirdoaApp!
+    - `Imagens`: define como sequência de imagens (habilita a opção para escolher formato de imagem);
+    - `GIF`: define saída como GIF animado (Habilita opção de frame rate);
+    - `Vídeo`: define saída como vídeo no formato `.mov` (Habilita opção de frame rate);
+  - `Resolução`: Define a resolução de saída.
+    - `Lock`: Força o _aspect ratio_ da cena, mantendo a proporção de resolução;
+  - `Duração`: define intervalo de frames do arquivo para exportar;
+  - `Folder`: escolha o destino das mídias;
+  - `Nome Arquivo`: define nome de saída do arquivo (sem formato);
 
   :::tip
     Use a pasta 'frames' no folder do arquivo para organizar suas mídias!
@@ -94,10 +105,13 @@ Esta ferramenta abre interface com opções para salvar o _RIG_ selecionado na [
 **Modo de uso:** Selecione o Grupo Principal do _RIG_, junto da _PEG_ _STAGE_ e o _backdrop_ do _RIG_, caso tenha.
 
 **Avisos Sobre o RIG:** Antes de abrir a interface, o script analiza o _RIG_ selecionado.
-- Verifica se há node FULL no RIG (não é obrigatório criar FULL nodes no RIG para salvar!);
-- Aviso sobre exposição vazia de drawings (olhar ferramenta ["Empty to Zzero"]);
-- Aviso sobre Pivot da _PEG_ _STAGE_; 
-- Aviso de uso de mais de uma paletta de cor no RIG;
+👉 Verifica se há node FULL no RIG (não é obrigatório criar FULL nodes no RIG para salvar!);
+
+👉 Aviso sobre exposição vazia de drawings (olhar ferramenta ["Empty to Zzero"]);
+
+👉 Aviso sobre Pivot da _PEG_ _STAGE_;
+
+👉 Aviso de uso de mais de uma paletta de cor no RIG;
 
 :::tip
    Deixe a timeline preparada para salvar o tpl do RIG. deixe exposto nela somente o turn ou as poses q deseja salvar no RIG. Limpe as paletas de cor, e organize somente com cores usadas no RIG.
