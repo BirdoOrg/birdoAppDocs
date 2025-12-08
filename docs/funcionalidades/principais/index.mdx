@@ -2,17 +2,38 @@
 title: Principais
 sidebar_position: 1
 ---
-import DocCardList from '@theme/DocCardList';
-import importedHome from './home-birdoapp-projetos.png'
+import Columns from '@site/src/components/Columns'
+import Column from '@site/src/components/Column'
 
-Essas são as funcionalidades que aparecem disponíveis na _home_ do projeto na interface do BirdoApp.
+import Button from '@site/src/components/Button'
+
+import importedHome from './home-birdoapp-projetos.png'
+import abrirCenaIcon from './abrir-cena-icon.png'
+import uploaderIcon from './uploader-icon.png'
+import assetsIcon from './assets-icon.png'
+
+
+Essas são as 3 funcionalidades principais disponíveis na _home_ do projeto na interface do BirdoApp.
+<Columns>
+  <Column className='text--left'>
+    <Button label="Abrir Cena" link="abrir-cena" variant="secondary" size="lg" img={abrirCenaIcon} outline />
+  </Column>
+  <Column className='text--center'>
+    <Button label="Assets" link="assets" variant="secondary" size="lg" img={assetsIcon} outline />
+  </Column>
+  <Column className='text--right'>
+    <Button label="Uploader" link="uploader" variant="secondary" size="lg" img={uploaderIcon} outline />
+  </Column>
+</Columns>
+
+
+###
 <div style={{ textAlign: 'left'}}>
   <img src={importedHome} width='250' />
 </div>
+> Home do projeto com ferramentas principais para o tipo de função do projeto.
 
 :::info
   As ferramentas disponíveis variam conforme o tipo de usuário do projeto. 
   O único usuário que tem acesso a todas ferramentas nesta página, é o usuário de Direção Técnica (DT)
 :::
-
-<DocCardList />
