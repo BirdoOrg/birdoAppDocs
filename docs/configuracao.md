@@ -13,14 +13,23 @@ Basicamente são 3 configurações necessárias, dependendo do [modo de uso](./m
 
 ## Configuração de usuário
 
-Essa configuração é necessária para /todas/ as pessoas que utilizarem o BirdoApp, mas se você for trabalhar na variante /standalone/, isso é, sem ser em um projeto de um estúdio que utiliza o BirdoApp, então essa é a unica configuração que você precisa fazer.
+Essa configuração é necessária para todas as pessoas que utilizarem o **BirdoApp**, mas se você for trabalhar no [modo solo](./modos-de-uso#modo-solo), isso é, sem ser em um projeto de um estúdio, então essa é a unica configuração que você precisa fazer.
 
 Essa configuração acontece na primeira vez que você abre o BirdoApp. Na interface você vai precisar preencher dois campos:
 
-* **Nome**, com seu nome;
-* **Versão do Harmony**, com a versão de Toon Boom instalada no seu computador que irá utilizar com o BirdoApp;
+> Interface da configuração de usuário:
 
-Essas informações constarão no arquivo `config.json`, na pasta do BirdoApp.
+!["interface config user"](./config-usuario.png)
+
+* `Nome`: Seu nome de usuário.
+* `Versão do Harmony`: A versão de Toon Boom instalada no seu computador que irá utilizar com o BirdoApp.
+
+:::info
+   Caso a versão de _Harmony_ que você deseja usar com o **BirdoApp** não aparecer na lista do campo `Versão do Harmony`, significa que ela está instalada em um 
+   diretório não padrão. Forneça o caminho da instalação no campo `Harmony Folder` (caminho onde está o arquivo _HarmonyPremium.exe_)
+:::
+
+Essas informações serão salvas no arquivo `config.json`, na pasta do BirdoApp.
 
 :::tip
    Evite ["caracteres inválidos"](./terminologia.md#caracteres-inválidos) ou espaços ao escolher o nome de usuário, evitando assim problemas de funcionamento do BirdoApp!
@@ -28,17 +37,35 @@ Essas informações constarão no arquivo `config.json`, na pasta do BirdoApp.
 
 ## Configuração de estúdio
 
-Se você estiver trabalhando para um estúdio, além das informações da [configuração de usuário](#configuração-de-usuário), você vai precisar preencher adicionalmente os seguintes campos:
+Se você estiver trabalhando para um estúdio, além das informações da [configuração de usuário](#configuração-de-usuário), você vai precisar preencher adicionalmente algumas informações que o estúdio 
+que você trabalhar deve te fornecer:
 
-* ***Local Folder***, o caminho de uma pasta _no seu computador_ onde o BirdoApp vai manter os arquivos em que você irá trabalhar (cenas, rigs, assets...);
-* **Nome do estúdio**, com o nome do estúdio;
-* **Configuração de projetos**, com o caminho da pasta no servidor, informado pelo estúdio, onde estão configurações de projeto.
+> Interface de Configuração de Estúdio:
 
-Essas informações tambem ficarão guardadas no arquivo `config.json`.
+!["Config estudio interface"](./config-estudio.png)
+
+* `Nome do estúdio`: Nome do estúdio que você está configurando.
+* `BirdoApp Setup`: É o caminho da pasta no servidor, informado pelo estúdio, onde estão configurações de projeto.
+
+Essas informações também ficarão guardadas no arquivo `config.json`.
+
+## Configuração Local de projeto
+
+Ao acessar o projeto pela primeira vez, você precisará fornecer a configuração local do projeto. Basicamente, dizer pro **BirdoApp** onde na sua máquina você deseja
+salvar os arquivos locais do projeto.
+
+> Interface da Configuração Local do Projeto Selecionado
+
+!["Interface config project"](./config-projeto.png)
+* `Folder Local`: O caminho de uma pasta **no seu computador** onde o **BirdoApp** vai manter os arquivos em que você irá trabalhar (cenas, rigs, assets...).
+* `Função no Projeto`: Escolha qual a função você irá exercer no projeto;
+
+Essas informações do projeto serão salvas na lista `user_projects` do arquivo `config.json`.
 
 ## Configuração de projetos
 
 Essa é uma configuração adicional que precisa ser feita por alguém encarregado do estúdio, como produtores ou supervisores técnico, para elencar os projetos que estarão disponíveis para todos que trabalham no estúdio _e_ como cada projeto está separado (episódios e cenas). Essa configuração é feita quando se abre o BirdoApp no modo desenvolvedor (depois da [configuração de estúdio](#configuração-de-estúdio)) e armazena as seguintes informações para cada projeto:
+
 
 * **Prefixo do projeto**, 3 letras que identifique o projeto, usado para resolver a nomenclatura dos arquivos desse projeto;
 * **Nome do projeto**, seguido por um **subtítulo** e uma **descrição**;

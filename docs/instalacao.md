@@ -1,9 +1,9 @@
 ---  
-sidebar_position: 13
+sidebar_position: 5
 title: "Instalação"  
 ---
 
-# # Instalação
+# Instalação
 
 ## Resumo
 
