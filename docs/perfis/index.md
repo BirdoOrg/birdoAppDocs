@@ -17,10 +17,9 @@ Diferentes profissionais trabalham com o BirdoApp. Na tabela a seguir uma descri
 
 Você pode conferir uma lista de funcionalidades disponíveis para cada um dos perfis nos links a seguir:
 
-- [Artista de Setup](./artista-setup/index.mdx)
-- [Designer](../perfis/designer/index.mdx)
-- [Rigger](../perfis/rigger/index.mdx)
-- [Artista de Animação](../perfis/artista-de-animacao/gerenciar)
-- [Artista de Comp](../perfis/artista-de-comp/gerenciar)
-- [Produtor(a)](../category/produtora)
-- [Técnico(a)](../category/técnicoa)
+- [Artista de Setup](./artista-setup.md)
+- [Designer](./designer.md)
+- [Rigger](./rigger.md)
+- [Artista de Animação](./artista-de-animacao.md)
+- [Artista de Comp](./artista-de-comp.md)
+- [Produção / Direção Técnica](./producao/index.mdx)
