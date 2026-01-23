@@ -62,18 +62,21 @@ salvar os arquivos locais do projeto.
 
 Essas informações do projeto serão salvas na lista `user_projects` do arquivo `config.json`.
 
-## Configuração de projetos
+## Menu Principal
 
-Essa é uma configuração adicional que precisa ser feita por alguém encarregado do estúdio, como produtores ou supervisores técnico, para elencar os projetos que estarão disponíveis para todos que trabalham no estúdio _e_ como cada projeto está separado (episódios e cenas). Essa configuração é feita quando se abre o BirdoApp no modo desenvolvedor (depois da [configuração de estúdio](#configuração-de-estúdio)) e armazena as seguintes informações para cada projeto:
+!["Menu principal do BirdoApp"](./menu-birdoapp.png)
 
+No menu superior da interface do BirdoApp, é possível ir para as páginas de configuração a qualquer momento, e editar as informações caso necessário.
 
-* **Prefixo do projeto**, 3 letras que identifique o projeto, usado para resolver a nomenclatura dos arquivos desse projeto;
-* **Nome do projeto**, seguido por um **subtítulo** e uma **descrição**;
-* **Pasta raíz**, com o caminho no servidor onde estão organizados os arquivos desse projeto;
-* **Ícone**, imagem do projeto na interface de seleção de projetos do BirdoApp.
+As seguintes opções estão disponíveis no menu superior:
 
-Essas informações devem ficar em uma pasta permanente do servidor onde todos do estúdio tenham acesso de leitura (a mesma informada no campo _configuração de projetos_ na [configuração de estúdio](#configuração-de-estúdio)). Preferencialmente, apenas produtores e supervisores devem ter acesso _de escrita_ a essa pasta. Mais sobre isso em [gestão de acessos](./gestao-de-acessos).
+ * [***Configuração do BirdoApp***](#configuração-de-usuário): Vai para pagina de configuração básica do BirdoApp;
+ * [***Configuração de Estúdio***](#configuração-de-estudio): Vai para página de configuração de Estúdio;
+ * [***Configuração de Projeto***](#configuração-local-de-projeto): Vai para página de configuração local do Projeto;
+ * **Créditos**: Mostra créditos do BirdoApp em uma janela;
+ * **Termos Legais**: Mostra os Termos Legais do BirdoApp;
+ * **Exit**: Fecha o programa;
 
-Detalhes de como fazer a configuração de projetos nas tarefas dos perfis de [produtora(o)](./perfis/produtora/configuracao-projetos) e [técnica(o)/perfis/produtora/configuracao-projetos](./perfis/tecnica/configuracao-projetos).
-
-Após a criação dos projetos, você pode alterar outras opções, como os templates, arquivos base usados para a criação de cenas e assets. Para mais informações sobre a criação de templates, consulte a seção [_templates_](./templates).
+:::info
+   Os itens de configuração aparecem disponíveis no menu somente nas páginas correspondentes. 
+:::
