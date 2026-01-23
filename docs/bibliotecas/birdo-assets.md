@@ -10,7 +10,7 @@ Esta é a biblioteca responsável por gerenciar os _RIGs_ de todos _Assets_ do p
 - ["Salvar TPL"](../funcionalidades/menu/index.mdx#salvar-tpl) `Ferramenta que salva itens novos na BirdoASSET`
 - ["Importar ASSET"](../funcionalidades/menu/index.mdx#importar-assets) `Interface para acessar a BirdoASSET e selecionar Assets para importar no Harmony`
 
-> A ferramenta ["Salvar TPL"](../funcionalidades/menu/index.mdx#salvar-tpl) está disponível somente para os ["artistas de RIG"](../perfis/rigger/gerenciar.md), através do ["Menu BirdoApp no Harmony"](../funcionalidades/menu/index.mdx) A ferramenta ["Importar ASSET"](../funcionalidades/menu/index.mdx#importar-assets) está disponível para todos arquivos de harmony do projeto (ASSET ou CENA) e acessível também pelo ["Menu BirdoApp no Harmony"](../funcionalidades/menu/index.mdx).
+> A ferramenta ["Salvar TPL"](../funcionalidades/menu/index.mdx#salvar-tpl) está disponível somente para os ["artistas de RIG"](../perfis/rigger.md), através do ["Menu BirdoApp no Harmony"](../funcionalidades/menu/index.mdx) A ferramenta ["Importar ASSET"](../funcionalidades/menu/index.mdx#importar-assets) está disponível para todos arquivos de harmony do projeto (ASSET ou CENA) e acessível também pelo ["Menu BirdoApp no Harmony"](../funcionalidades/menu/index.mdx).
 
 ## Estrutura
 A estrutura de arquivos do _BirdoASSET_ fica armazenada no caminho `./_tbLib/BirdoASSET/` na raiz do projeto, dividida com uma lógica que favorece a organização por versionamento de cada item.

@@ -32,6 +32,6 @@ Para o artista de DESIGN essas são ferramentas disponíveis:
 
 * [***Assets***](../funcionalidades/principais/assets.md): Ferramenta perimite criar ou abrir arquivos de assets do projeto escolhido..
 
-* [***Menu BirdoApp***](../funcionalidades/principais/menu/index.mdx): Ferramentas do menu BirdoApp dentro do Harmony.
+* [***Menu BirdoApp***](../funcionalidades/menu/index.mdx): Ferramentas do menu BirdoApp dentro do Harmony.
 
 * [***Ferramentas de ToolBars***](../funcionalidades/toolbars/index.mdx): Ferramentas disponíveis nos _toolbars_ do BirdoApp dentro do Harmony.

@@ -32,6 +32,6 @@ Para o artista de setup essas são ferramentas disponíveis:
 
 * [***Abrir Cenas***](../funcionalidades/principais/abrir-cena.md): Ferramenta que lista as cenas de Harmony disponíveis no servidor para a etapa de SETUP.
 
-* [***Menu BirdoApp***](../funcionalidades/principais/menu/index.mdx): Ferramentas do menu BirdoApp dentro do Harmony.
+* [***Menu BirdoApp***](../funcionalidades/menu/index.mdx): Ferramentas do menu BirdoApp dentro do Harmony.
 
 * [***Ferramentas de ToolBars***](../funcionalidades/toolbars/index.mdx): Ferramentas disponíveis nos _toolbars_ do BirdoApp dentro do Harmony.
