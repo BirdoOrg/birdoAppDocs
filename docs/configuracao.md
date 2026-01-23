@@ -61,22 +61,3 @@ salvar os arquivos locais do projeto.
 * `Função no Projeto`: Escolha qual a função você irá exercer no projeto;
 
 Essas informações do projeto serão salvas na lista `user_projects` do arquivo `config.json`.
-
-## Menu Principal
-
-!["Menu principal do BirdoApp"](./menu-birdoapp.png)
-
-No menu superior da interface do BirdoApp, é possível ir para as páginas de configuração a qualquer momento, e editar as informações caso necessário.
-
-As seguintes opções estão disponíveis no menu superior:
-
- * [***Configuração do BirdoApp***](#configuração-de-usuário): Vai para pagina de configuração básica do BirdoApp;
- * [***Configuração de Estúdio***](#configuração-de-estudio): Vai para página de configuração de Estúdio;
- * [***Configuração de Projeto***](#configuração-local-de-projeto): Vai para página de configuração local do Projeto;
- * **Créditos**: Mostra créditos do BirdoApp em uma janela;
- * **Termos Legais**: Mostra os Termos Legais do BirdoApp;
- * **Exit**: Fecha o programa;
-
-:::info
-   Os itens de configuração aparecem disponíveis no menu somente nas páginas correspondentes. 
-:::
