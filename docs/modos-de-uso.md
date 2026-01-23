@@ -68,6 +68,12 @@ Após a configuração, você terá acesso aos projetos ativos do estúdio e às
 
 👉 [**Configuração Local de Projeto**](./configuracao#configuração-local-de-projeto)
 
+### Escolhendo Perfis:
+Após fazer as configurações básicas de [Usuário](./configuracao#configuração-de-usuário) e de [Estúdio](./configuracao#configuração-de-estúdio), você precisa ainda fazer a [configuração local do projeto](./configuracao#configuração-local-de-projeto),
+onde você escolherá qual função irá exercer dentro do projeto. 
+
+👉 Mais informações sobre Perfils de projeto, acesse: ["Perfils"](./perfis/index.md) 
+
 ### O que você pode fazer no modo Estúdio:
 
 * Visualizar e escolher projetos disponíveis no servidor.
