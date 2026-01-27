@@ -16,7 +16,7 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 Em seguida, cole essa próxima linha e pressione `ENTER` novamente.
 
 ``` powershell
-IRM -Uri https://raw.githubusercontent.com/otmbneto/BirdoApp/refs/heads/config_proj3/install.ps1 | IEX  
+IRM -Uri https://raw.githubusercontent.com/BirdoOrg/BirdoApp/refs/heads/main/install.ps1 | IEX
 ```
 
 Depois disso basta seguir as orientações.
