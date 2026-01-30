@@ -83,9 +83,10 @@ Estas são as opções disponíveis no menu principal do modo produtor:
     Escolha uma pasta onde contenha somente os arquivos de video com cenas separadas de animatic, e esta opção faz as seguintes ações:
       - Converte todos arquivos para compressão de animatic;
       - Cria uma cópia com a nomenclatura correta na estrutura do projeto;
-    
-    :::tip
-        Esta ação também pode ser feita usando interface, com a funcionalidade ["Uploader"](../../funcionalidades/principais/uploader.md)
+    :::warning
+	Os arquivos de animatic para esta ação, devem estar com o padrão de nome de cena do projeto. 
+	Ex: `PRJ_EP003_SC0010.mov`. 
+	Para subir sequencia de cenas de animatic, sem precisar salvar com este padrão de nome, use a interface do ["Uploader"](../../funcionalidades/principais/uploader.md).
     :::
     
     * `Criar Setup Básico`: Uma vez importados os trechos de animatics, um setup básico precisa ser criado para cada cena. O setup básico é o primeiro arquivo de Harmony (`.xstage`) de cada cena e contem as respectivas referências de som e imagem da cena em questão, assim como a duração. A criação do setup básico é feita de forma automática para cada cena que teve um trecho de animatic importado na etapa anterior, ou para um conjunto restrito de cenas selecionadas.
