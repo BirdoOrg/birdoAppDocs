@@ -48,21 +48,24 @@ Para que o BirdoApp funcione conforme o esperado, é necessário que cada uma da
 - Windows 10 ou superior(É necessário ter um usuário do Windows SEM caracteres inválidos ou espaço no nome); 
 - Harmony 20 ou superior(Algumas ferramentas podem não funcionar corretamente no Harmony 25!);
 
-# # Desinstalação
 
-## Resumo
-Este script foi criado para garantir que nenhum arquivo ou configuração desnecessária fique para trás após a remoção do aplicativo.
+# Desinstalação
+
+Este script foi criado para garantir que nenhum arquivo ou configuração desnecessária fique para trás após a remoção do aplicativo. 
+
+:::tip
+    Se você tem alguma versão antiga do BirdoApp instalada, recomendamos desinstalar com este processo antes de tentar instalar a versão mais recente!
+:::
 
 Para iniciar a desinstalação do BirdoApp no Windows, abra o programa Powershell (ou Terminal) e cole a primeira linha a seguir e pressione a tecla `ENTER`.
 
-``` powershell
-cd $env:APPDATA/BirdoApp
+```
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 ```
 
 Em seguida, cole essa próxima linha e pressione `ENTER` novamente.
-
-``` powershell
-.\uninstall.ps1
+```
+IRM -Uri https://raw.githubusercontent.com/BirdoOrg/BirdoApp/refs/heads/main/uninstall.ps1 | IEX
 ```
 
 Depois disso basta seguir as orientações.
