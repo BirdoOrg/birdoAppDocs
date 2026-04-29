@@ -28,7 +28,7 @@ Após a instalação, ao abrir o BirdoApp pela primeira vez, você será guiado 
 
 👉 Após a seleção do modo para Estúdios, o BirdoApp carrega a janela [principal](../funcionalidades/principais/index.mdx) com as ferramentas disponíveis.
 
-Para o artista de Animação essas são ferramentas disponíveis:
+Para o artista de COMP essas são ferramentas disponíveis:
 
 * [***Abrir Cenas***](../funcionalidades/principais/abrir-cena.md): Ferramenta que lista as cenas de Harmony da etapa ANIM, 
 
