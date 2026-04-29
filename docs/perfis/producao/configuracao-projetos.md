@@ -4,7 +4,7 @@ title: "Configuração de Projetos"
 description: "Passo-a-passo da configuração de projetos no BirdoApp."
 ---
 
-> _Passo-a-passo da configuração de projetos no BirdoApp para **produtores / deiretor técinico**._
+> _Passo-a-passo da configuração de projetos no BirdoApp para **produtores / deiretor técnico**._
 
 Cabe aos produtores fazer a configuração dos **Projetos**, **Episódios** e **Cenas** para que apareçam disponíveis para todos os outros do estúdio. Na prática, essas configurações geram os arquivos necessários  para que o BirdoApp apresente os projetos, episódios e cenas disponíveis para os outros perfis.
 
@@ -16,7 +16,7 @@ O _Modo Produtor_ é uma interface no terminal que permite ações que não est�
 
 Siga os passos a seguir para executar o BirdoApp no modo produtor:
 
-#### a. Abra o programa Powershell;
+#### a. Abra o programa Powershell (ou Terminal do Windows);
 
 #### b. Execute os comandos a seguir, cada um seguido pela tecla `ENTER`
 
